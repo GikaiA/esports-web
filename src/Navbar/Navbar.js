@@ -25,10 +25,15 @@ const  Navbar = () => {
         <a href="/aboutus" className="navbar-title-link">About Us</a>
       </div>
       <div className="navbar-title">
-        <a href="#projects" className="navbar-title-link">Teams</a>
+        <a href="" className="navbar-title-link">Teams</a>
         <div className="dropdown">
-          <p>Call of Duty</p>
-          <p>Overwatch</p>  
+        <a href="/teams/call-of-duty">Call of Duty</a> 
+          <a href="/teams/overwatch">Overwatch</a>  
+          <a href="/teams/league-of-legends">League of Legends</a>
+          <a href="/teams/csgo">CSGO</a>
+          <a href="/teams/valorant">Valorant</a>
+          <a href="/teams/rocket-league">Rocket League</a>
+          <a href="/teams/smash">Smash Bros</a>
         </div>
       </div>
       <div className="navbar-title">
