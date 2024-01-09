@@ -6,7 +6,7 @@ function Homepage() {
     <div className="homepage">
       <div className="heading-section">
         <h1 className="heading-title">Owls Esports Gaming Club</h1>
-        <h2 className="establish-title">Est. 2017</h2>
+        <h2 className="establish-title">Est. 2019</h2>
       </div>
     </div>
   );

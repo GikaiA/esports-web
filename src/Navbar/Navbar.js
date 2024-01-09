@@ -2,33 +2,37 @@ import React, {useState} from "react";
 import "./Navbar.css";
 
 const  Navbar = () => {
-  // const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  // const toggleMobileMenu =() => {
-  //   setMobileMenuOpen(!mobileMenuOpen);
-  // };
+  const toggleMobileMenu =() => {
+    setMobileMenuOpen(!mobileMenuOpen);
+  };
 
   return (
      <nav className="navbar">
     <div
-      className='menu-toggle'
+      className='menu-toggle' onClick={toggleMobileMenu}
     >
       <div className="bar"></div>
       <div className="bar"></div>
       <div className="bar"></div>
     </div>
-    <div className="navbar-links">
+    <div className={`navbar-links ${mobileMenuOpen ? 'active' : ''}`}>
       <div className="navbar-title">
-        <a href="/">Home</a>
+        <a href="/" className="navbar-title-link">Home</a>
       </div>
       <div className="navbar-title"> 
-        <a href="/aboutus">About Us</a>
+        <a href="/aboutus" className="navbar-title-link">About Us</a>
       </div>
       <div className="navbar-title">
-        <a href="#projects">Projects</a>
+        <a href="#projects" className="navbar-title-link">Teams</a>
+        <div className="dropdown">
+          <p>Call of Duty</p>
+          <p>Overwatch</p>  
+        </div>
       </div>
       <div className="navbar-title">
-       <a href="#skills">Skills</a>
+       <a href="#skills" className="navbar-title-link">Socials</a>
       </div>
     </div>
   </nav>

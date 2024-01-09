@@ -1,7 +1,7 @@
 import React from 'react';
-import './About.css';
+import './COD.css';
 
-function About() {
+function COD() {
   return (
     <div>
       
@@ -9,4 +9,4 @@ function About() {
   )
 }
 
-export default About
+export default COD
