@@ -3,8 +3,10 @@ import './COD.css';
 
 function COD() {
   return (
-    <div>
-      
+    <div className='bg-wrapper'>
+      <div className='cod-container'>
+        
+      </div>
     </div>
   )
 }
