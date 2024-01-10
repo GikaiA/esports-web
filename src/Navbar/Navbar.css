@@ -45,6 +45,12 @@
   display: block;
 }
 
+.dropdown-title{
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+
 
 /* Your existing styles for larger screens */
 
