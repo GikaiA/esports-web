@@ -2,14 +2,15 @@
   background-color: transparent;
   padding: 15px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   transition-duration: 0.5s;
-  float: right;
 }
 
 .navbar-links {
   display: flex;
+  justify-content: flex-end;
+  align-items: center;
   margin-right: 10px;
   gap: 14px;
 }
