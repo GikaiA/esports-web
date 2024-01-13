@@ -4,7 +4,7 @@ import codlogo from "../COD/COD Logo.png";
 
 function COD() {
   return (
-    <div className="bg-wrapper">
+    <div className="cod-wrapper">
       <div className="cod-container">
         <img src={codlogo} alt="cod-logo" className="logo"></img>
         <div className="bg-container">
@@ -32,7 +32,7 @@ function COD() {
           </p> 
           </div>
          <div className="roster-section">
-          <h2 className="roster-title">Main Roster</h2>
+          <h1 className="roster-title">Main Roster</h1>
           <p className="roster-paragraph">Roster TBA</p>
           <div className="twitch-section">
           <iframe
