@@ -2,7 +2,7 @@
     background-image: url("/src/images/soldier76-hero.png");
     background-color: rgba(204, 204, 204, 0);
     height: 97vh;
-    width: 100%;
+    max-width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -20,6 +20,7 @@
 
   .ow-paragraph{
     display: block;
+    font-family: "Poppins";
     background-color: #074176;
     padding-top: 100px;
     /* height: 65vh; */
@@ -40,6 +41,12 @@
 
   .ow-roster-text{
     font-size: 30px;
+  }
+
+  @font-face {
+    font-family: "Poppins";
+    src: local("Poppins"),
+      url(/src/fonts/Poppins-Regular.woff) format("woff");
   }
 
   @media screen and (min-width: 768px) {
@@ -70,11 +77,13 @@
   }
   
   @media screen and (min-width: 768px) {
-    .ow-paragraph {
-      height: 50vh; /* Adjusted height for larger screens */
-    }
+    /* .ow-paragraph {
+      height: 50vh;
+    } */
   }
   
+ 
+
   .ow-roster {
     display: block;
     align-items: center;

@@ -1,0 +1,16 @@
+.about-us-section{
+    display: block;
+    align-items: center;
+}
+
+.about-us-text{
+    color: white;
+    font-size: 25px;
+    font-family: "Poppins";
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: local("Poppins"),
+      url(/src/fonts/Poppins-Regular.woff) format("woff");
+  }
