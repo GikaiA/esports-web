@@ -1,0 +1,30 @@
+.footer-section{
+    display: flex;
+}
+
+.social-section{
+    display: block;
+}
+
+.follow-us{
+    color: white;
+}
+
+
+.icons-section{
+    display: flex;
+    color: white;
+    gap: 18px;
+
+}
+
+
+.link{
+    text-decoration: none;
+    color: white;
+}
+
+.icon{
+    height: 200px;
+    width: 60px;
+}

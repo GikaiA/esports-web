@@ -1,16 +1,39 @@
-.about-us-section{
-    display: block;
-    align-items: center;
+body {
+  background-color: #003366;
 }
 
-.about-us-text{
-    color: white;
-    font-size: 25px;
-    font-family: "Poppins";
+.about-us-section {
+  display: block;
+  align-items: center;
+  padding-top: 200px;
+}
+
+.about-us-text {
+  color: white;
+  font-size: 25px;
+  font-family: "Poppins";
+}
+
+.owls-logo {
+  height: 600px;
 }
 
 @font-face {
-    font-family: "Poppins";
-    src: local("Poppins"),
-      url(/src/fonts/Poppins-Regular.woff) format("woff");
+  font-family: "Poppins";
+  src: local("Poppins"), url(/src/fonts/Poppins-Regular.woff) format("woff");
+}
+
+@media only screen and (max-width: 768px) {
+  .about-us-section {
+    padding-top: 25px; /* Adjust the padding for smaller screens */
   }
+
+  .about-us-text {
+    font-size: 18px; /* Adjust the font size for smaller screens */
+  }
+
+  .owls-logo {
+    height: auto; /* Allow the logo to shrink with smaller screens */
+    max-width: 100%; /* Make sure the logo doesn't overflow its container */
+  }
+}

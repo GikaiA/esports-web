@@ -1,5 +1,6 @@
 import React from "react";
 import "./About.css";
+import owlslogo from '../images/owls-esports.png'
 
 function About() {
   return (
@@ -17,6 +18,7 @@ function About() {
         Council, successfully obtaining approval and official recognition as a
         sports club.
       </p>
+      <img src={owlslogo} alt="owls-logo" className="owls-logo"></img>
     </div>
   );
 }
