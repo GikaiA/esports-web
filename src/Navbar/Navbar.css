@@ -20,6 +20,13 @@
 .navbar-title-link {
   color: white;
   text-decoration: none;
+  transition-duration: 0.3s;
+}
+
+.navbar-title-link:hover{
+  text-decoration: underline;
+  text-decoration-color: #CC0000;
+  text-decoration-thickness:3px ;
 }
 
 .menu-toggle {
@@ -33,6 +40,7 @@
   position: absolute;
   background-color: #f9f9f9;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
 }
 
 /* Display the dropdown when hovering over the parent */

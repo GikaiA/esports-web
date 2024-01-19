@@ -1,3 +1,8 @@
+/* body{
+    background-color: #cc0000;
+} */
+
+
 .footer-section{
     display: flex;
 }
@@ -27,4 +32,8 @@
 .icon{
     height: 200px;
     width: 60px;
+}
+
+.copyright-section{
+    display: flex;
 }

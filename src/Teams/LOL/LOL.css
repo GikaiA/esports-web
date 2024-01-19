@@ -1,0 +1,17 @@
+.lol-wrapper{
+    background-image: url("/src/bgbutton/LOL-wallpaper.jpg");
+    height: 95vh;
+    max-width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.lol-section{
+
+}
+
+.lol-logo{
+    width: 200px;
+}

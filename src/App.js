@@ -28,7 +28,7 @@ function App() {
           <Route path="/teams/smash" element={<Smash />} />
           <Route path="/teams/valorant" element={<Valorant />} />
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
       </BrowserRouter>
     </div>
   );

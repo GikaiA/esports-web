@@ -10,7 +10,6 @@ function Footer() {
   return (
     <div className="footer-section">
       <div className="social-section">
-        {/* <h1 className="follow-us">FOLLOW US ON SOCIAL:</h1> */}
         <div className="icons-section">
           <a href="https://discord.com/invite/owlsgamingclub" className="link">
             <FaDiscord className="icon" />
@@ -30,6 +29,9 @@ function Footer() {
           <a href="https://www.youtube.com/channel/UCZXA1OY_Qsp3MH90DlX31AQ" className="link">
             <GrYoutube className="icon" />
           </a>
+        </div>
+        <div className="copyright-section">
+          <p className="copyright-sentence">© 2024 by Owls Esports Club/ Gikai Andrews </p>
         </div>
       </div>
     </div>
