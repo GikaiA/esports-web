@@ -1,17 +1,42 @@
-.lol-wrapper{
-    background-image: url("/src/bgbutton/LOL-wallpaper.jpg");
-    height: 95vh;
-    max-width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.lol-wrapper {
+  background-image: url("/src/bgbutton/LOL-wallpaper.jpg");
+  height: 95vh;
+  max-width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-
-.lol-section{
-
+.lol-section {
 }
 
-.lol-logo{
-    width: 200px;
+.lol-logo {
+  width: 300px;
+  padding-top: 92px;
+  padding-right: 1800px;
+  padding-bottom: 20px;
 }
+
+.lol-paragraph{
+    background-color: rgb(0, 75, 3);
+    font-family: 'Poppins';
+}
+
+.lol-text{
+    color: white;
+    font-size: 25px;
+}
+
+h1{
+    color: white;
+}
+
+.lol-roster-text{
+    color: white;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: local("Poppins"),
+      url(/src/fonts/Poppins-Regular.woff) format("woff");
+  }
