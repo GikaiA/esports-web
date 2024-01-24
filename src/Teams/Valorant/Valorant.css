@@ -1,0 +1,44 @@
+.val-wrapper{
+    background-image: url("/src/bgbutton/valorant-wallpaper.jpg");
+    background-color: rgba(204, 204, 204, 0);
+    height: 97vh;
+    max-width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.val-section{
+    display: flex;
+}
+
+.val-logo{
+    width: 340px;
+    float: left;
+    padding-left: 20px;
+}
+
+.val-paragraph{
+    color: white;
+    /* position: fixed;
+    bottom: 0; */
+    background-color: #d35269;
+
+}
+
+.roster-text{
+    font-size: 30px;
+}
+
+.val-text{
+    font-family:"Poppins" ;
+    font-size: 28px;
+}
+
+
+@font-face {
+    font-family: "Poppins";
+    src: local("Poppins"),
+      url(/src/fonts/Poppins-Regular.woff) format("woff");
+  }
