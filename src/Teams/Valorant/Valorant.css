@@ -1,44 +1,62 @@
-.val-wrapper{
+.val-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-image: url("/src/bgbutton/valorant-wallpaper.jpg");
     background-color: rgba(204, 204, 204, 0);
-    height: 97vh;
+    min-height: 97vh;
     max-width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-
-.val-section{
-    display: flex;
-}
-
-.val-logo{
-    width: 340px;
-    float: left;
-    padding-left: 20px;
-}
-
-.val-paragraph{
-    color: white;
-    /* position: fixed;
-    bottom: 0; */
-    background-color: #d35269;
-
-}
-
-.roster-text{
-    font-size: 30px;
-}
-
-.val-text{
-    font-family:"Poppins" ;
-    font-size: 28px;
-}
-
-
-@font-face {
-    font-family: "Poppins";
-    src: local("Poppins"),
-      url(/src/fonts/Poppins-Regular.woff) format("woff");
   }
+  
+  .val-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .val-logo {
+    width: 340px;
+    margin-top: 20px;
+  }
+  
+  .val-paragraph {
+    color: white;
+    background-color: #d35269;
+    padding: 20px;
+    width: 70%;
+    box-sizing: border-box;
+    margin-top: 20px;
+    opacity: 0; /* Initially set the opacity to 0 */
+    animation: fadeIn 1.5s ease-out forwards; /* Animation for fading in */
+  
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px); /* Optional: Add a slight vertical transition */
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  }
+  
+  .roster-text {
+    font-size: 30px;
+  }
+  
+  .val-text p {
+    font-family: "Poppins";
+    font-size: 28px;
+    margin: 0;
+    line-height: 1.5;
+  }
+  
+  @font-face {
+    font-family: "Poppins";
+    src: local("Poppins"), url(/src/fonts/Poppins-Regular.woff) format("woff");
+  }
+  
