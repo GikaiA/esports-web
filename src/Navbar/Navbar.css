@@ -38,7 +38,7 @@
 .dropdown {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: #003366;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   z-index: 9999;
 }
@@ -59,9 +59,15 @@
 .dropdown-title{
   display: block;
   text-decoration: none;
-  color: black;
+  color: white;
+  transition-duration: 0.5s;
 }
 
+.dropdown-title:hover{
+  text-decoration: underline;
+  text-decoration-color: #CC0000;
+  text-decoration-thickness:3px ;
+}
 
 
 @font-face {
