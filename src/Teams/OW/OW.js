@@ -5,8 +5,9 @@ import ow2 from "../OW/OW Logo.png";
 function OW() {
   return (
     <div className="ow-wrapper">
+      <div className="ow-parallax-bg"></div>
       <div className="ow-section">
-        <img src={ow2} alt="ow-logo" className="ow-logo"></img>
+        <img src={ow2} alt="ow-logo" className="ow-logo-white"></img>
       </div>
       <div className="ow-paragraph">
         <p className="ow-text">
@@ -26,9 +27,19 @@ function OW() {
         </p>{" "}
         <div className="ow-roster">
           <h1>Main Roster</h1>
-          <p className="ow-roster-text">TBA</p>
-        </div> 
-        
+          <p className="ow-roster-text">TBA</p>{" "}
+          <div className="twitch-section">
+            <iframe
+              title="Twitch Stream"
+              src="https://player.twitch.tv/?channel=owlsesportsfl&muted=true"
+              height="491"
+              width="850"
+              frameBorder="0"
+              scrolling="no"
+              allowFullScreen
+            />
+          </div>
+        </div>
       </div>
     </div>
   );

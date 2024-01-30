@@ -1,0 +1,72 @@
+/* csgo.css */
+.csgo-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.csgo-parallax-bg {
+  background-image: url("/src/bgbutton/cs2-wallpaper.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.csgo-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+}
+
+.csgo-logo {
+  width: 540px;
+  margin-top: 120px;
+}
+
+.csgo-paragraph {
+  color: white;
+  background-color: #772409;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 100px;
+  position: relative;
+  z-index: 2;
+}
+
+.csgo-text {
+  font-size: 30px;
+}
+
+.csgo-roster {
+  flex: 1;
+  display: block;
+  align-items: center;
+  padding-left: 20px;
+  color: white;
+}
+
+.csgo-roster-title {
+  font-size: 30px;
+}
+
+.csgo-roster-paragraph {
+  font-size: 25px;
+}
+
+@media screen and (min-width: 768px) {
+
+}

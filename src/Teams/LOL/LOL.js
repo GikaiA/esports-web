@@ -5,6 +5,7 @@ import lol from "../LOL/LOL-logo.png";
 function LOL() {
   return (
     <div className="lol-wrapper">
+      <div className="lol-parallax-bg"></div>
       <div className="lol-section">
         <img src={lol} alt="lol-logo" className="lol-logo" />
       </div>
@@ -26,9 +27,20 @@ function LOL() {
           2023-2024 season, eager to make their mark in the League of Legends
           esports realm.
         </p>
-        <div className="lol-roster">
-        <h1 className="lol-">Main Roster</h1>
+        <div className="roster-paragraph">
+        <h1 className="lol-roster">Main Roster</h1>
         <p className="lol-roster-text">TBA</p>
+        <div className="twitch-section">
+            <iframe
+              title="Twitch Stream"
+              src="https://player.twitch.tv/?channel=owlsesportsfl&muted=true"
+              height="491"
+              width="850"
+              frameBorder="0"
+              scrolling="no"
+              allowFullScreen
+            />
+          </div>
       </div>
       </div>
     </div>

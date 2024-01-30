@@ -12,23 +12,28 @@ function Valorant() {
       <div className="val-paragraph">
         <div className="val-text">
           <p>
-            Valorant, a game that began its journey at our school in 2021 under
-            the banner of the Union, has undergone a remarkable evolution.
-            Initially nurtured and supported by the Union, the esports club
-            existed somewhat in its shadow. However, in a pivotal move just a
-            year later, the Union handed over its Valorant teams to the esports
-            club, setting the stage for a new era. At present, the team is
-            under the able leadership of SweetBee, who has been instrumental
-            in shaping their trajectory. Fast forward to 2023, and the Valorant
-            squad has ascended to new heights, actively participating in both
-            NACE and ESL competitions. Their dedication and growth continue to
-            make waves in the competitive gaming scene, marking a promising
-            chapter in the school's esports legacy.
+            Valorant, launched at our school in 2021 under the Union, has
+            evolved remarkably. Initially supported by the Union, the esports
+            club operated in its shadow. A year later, the Union transferred
+            Valorant teams to the esports club, initiating a new era. Led by
+            SweetBee, the team now actively competes in NACE and ESL, marking a
+            promising chapter in the school's esports legacy.
           </p>
         </div>
         <div className="val-roster">
-          <h1 className="val-roster-text">Main Roster</h1>
+          <h1 className="val-roster-title">Main Roster</h1>
           <p className="roster-text">TBD</p>
+          <div className="twitch-section">
+            <iframe
+              title="Twitch Stream"
+              src="https://player.twitch.tv/?channel=owlsesportsfl&muted=true"
+              height="491"
+              width="850"
+              frameBorder="0"
+              scrolling="no"
+              allowFullScreen
+            />
+          </div>
         </div>
       </div>
     </div>

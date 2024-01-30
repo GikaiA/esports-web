@@ -1,51 +1,78 @@
+/* cod.css */
 .cod-wrapper {
-  background-image: url("/src/images/MW3-hero.jpeg");
-  background-color: rgba(204, 204, 204, 0);
-  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
   max-width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.cod-parallax-bg {
+  background-image: url("/src/images/MW3-hero.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed; /* Add parallax effect */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.cod-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  padding-top: 30px;
 }
 
 .logo {
-  display: flex;
-  height: 100px;
-  padding-top: 200px;
-  padding-left: 200px;
-  padding-bottom: 20px;
+  width: 540px;
+  margin-top: 120px;
 }
 
-.bg-container{
-  background-color: black;
-}
-.text-container {
-  flex: 1;
-  display: flex;
-  flex-direction: column; 
-  align-items: center;
-  padding-left: 20px; 
-}
-
-.info-text {
+.cod-paragraph {
   color: white;
-  font-size: 28px;
-  padding-top: 20px;
+  background-color: #000000;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: auto; 
+  /* opacity: 0; */
+  position: relative;
+  z-index: 2;
 }
 
-.roster-section {
-  flex: 1; 
+.cod-roster {
+  flex: 1;
   display: block;
   flex-direction: column;
-  align-items: flex-start; 
+  align-items: flex-start;
   padding-left: 20px;
   color: white;
 }
 
-.roster-paragraph{
-  font-size:25px ;
+.cod-text{
+  font-size: 30px;
 }
 
+.cod-roster-title {
+  font-size: 30px;
+}
+
+.roster-paragraph {
+  font-size: 25px;
+}
+
+.twitch-section {
+  padding-top: 20px;
+}
 
 @media screen and (max-width: 600px) {
   .bg-wrapper {
@@ -64,9 +91,8 @@
     text-align: center; /* Center text for smaller screens */
   }
 
-  .logo{
-    height: 45px;
+  .logo {
+    height: 90px;
+    padding-bottom: 20px;
   }
 }
-
-

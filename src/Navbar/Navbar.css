@@ -109,6 +109,7 @@
     top: 0;
     right: 0;
     background-color: #333;
+    z-index: 999;
   }
 
   .navbar-links.active {
@@ -117,7 +118,7 @@
     position: absolute;
     top: 60px;
     left: 0;
-    background-color: #333;
+    background-color: #003366;
   }
 
   .navbar-title {
