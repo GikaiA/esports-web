@@ -1,0 +1,81 @@
+/* rocket-league.css */
+.rocket-league-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .rocket-parallax-bg {
+    background-image: url("/src/bgbutton/RL-wallpaper.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  
+  .rocket-league-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .rocket-league-logo {
+    width: 340px; /* Adjust the size as needed */
+    margin-top: 20px;
+  }
+  
+  .rocket-league-paragraph {
+    color: white;
+    background-color: #068efc;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: auto; /* Push the paragraph to the bottom */
+    position: relative;
+    z-index: 2;
+  }
+  
+  .rocket-text p {
+    /* Your paragraph text styles */
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  
+  .rocket-roster {
+    flex: 1;
+    display: block;
+    align-items: center;
+    padding-left: 20px;
+    color: white;
+  }
+  
+  .rocket-roster-title {
+    font-size: 30px;
+  }
+
+  .rocket-text{
+    font-size: 30px;
+    font-family: "Poppins";
+  }
+  
+  .rocket-roster-paragraph {
+    font-size: 35px;
+    font-family: "Poppins";
+  }
+  
+  @font-face {
+    font-family: "Poppins";
+    src: local("Poppins"), url(/src/fonts/Poppins-Regular.woff) format("woff");
+  }

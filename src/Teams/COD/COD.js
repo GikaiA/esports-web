@@ -28,7 +28,7 @@ function COD() {
               title="Twitch Stream"
               src="https://player.twitch.tv/?channel=owlsesportsfl&muted=true"
               height="480"
-              width="400"
+              width="800"
               frameBorder="0"
               scrolling="no"
               allowFullScreen
