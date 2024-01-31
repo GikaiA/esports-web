@@ -37,7 +37,7 @@ const Navbar = () => {
             className={`navbar-title-link ${mobileMenuOpen ? "active" : ""}`}
             onClick={toggleDropdown}
           >
-            Teams
+            Teams &nbsp;▼
           </a>
           <div className="dropdown">
             <a href="/teams/call-of-duty" className="dropdown-title">
