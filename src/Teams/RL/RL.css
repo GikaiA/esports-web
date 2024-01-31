@@ -29,10 +29,11 @@
     justify-content: center;
     position: relative;
     z-index: 2;
+    padding-top: 100px;
   }
   
   .rocket-league-logo {
-    width: 340px; /* Adjust the size as needed */
+    width: 440px; 
     margin-top: 20px;
   }
   
@@ -42,13 +43,12 @@
     padding: 20px;
     width: 100%;
     box-sizing: border-box;
-    margin-top: auto; /* Push the paragraph to the bottom */
+    margin-top: auto; 
     position: relative;
     z-index: 2;
   }
   
-  .rocket-text p {
-    /* Your paragraph text styles */
+  .rocket-text {
     font-size: 18px;
     line-height: 1.5;
   }

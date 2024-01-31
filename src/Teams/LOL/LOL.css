@@ -31,7 +31,7 @@
 }
 
 .lol-logo {
-  width: 460px; 
+  width: 560px; 
   margin-top: 20px;
 }
 
@@ -42,7 +42,6 @@
   width: 100%;
   box-sizing: border-box;
   margin-top: 10px; 
-  /* opacity: 0; */
   position: relative;
   z-index: 2;
 }
@@ -63,3 +62,8 @@
   font-size: 30px;
 }
 
+@media only screen and (max-width: 600px) {
+  .lol-logo {
+   padding-bottom: 20px;
+  }
+}

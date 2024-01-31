@@ -28,11 +28,11 @@
     justify-content: center;
     position: relative;
     z-index: 2;
+    padding-top: 100px;
   }
   
   .smash-logo {
-    width: 440px; /* Adjust the size as needed */
-    margin-top: 20px;
+    width: 540px; 
   }
   
   .smash-paragraph {
@@ -41,7 +41,7 @@
     padding: 20px;
     width: 100%;
     box-sizing: border-box;
-    margin-top: auto; /* Push the paragraph to the bottom */
+    margin-top: auto; 
     position: relative;
     z-index: 2;
     font-family: "Poppins";
@@ -71,4 +71,10 @@
   @font-face {
     font-family: "Poppins";
     src: local("Poppins"), url(/src/fonts/Poppins-Regular.woff) format("woff");
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .smash-section {
+     padding-bottom: 20px;
+    }
   }
