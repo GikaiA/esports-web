@@ -76,10 +76,6 @@
     url(../fonts/Oswald-VariableFont_wght.woff) format("woff");
 }
 
-
-/* Your existing styles for larger screens */
-
-/* Off-canvas styles for smaller screens */
 @media screen and (max-width: 768px) {
   .navbar {
     flex-direction: column;
@@ -100,6 +96,18 @@
     background-color: #fff;
     margin: 6px 0;
   }
+
+  .dropdown{
+    display: none;
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    width: 100%;
+  }
+
+  /* .navbar-title.acitve, .dropdown{
+    display: block;
+  } */
 
   .navbar-links {
     display: none;
@@ -123,5 +131,12 @@
 
   .navbar-title {
     margin: 10px 0; /* Adjust as needed */
+  }
+  .navbar-title.active > a {
+    pointer-events: none;
+  }
+  
+  .navbar-title.active > a + .dropdown {
+    display: block;
   }
 }

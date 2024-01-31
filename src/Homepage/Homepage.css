@@ -1,57 +1,55 @@
-/* body {
-    background-color: black;
-} */
-
 .homepage {
-    position: relative;
-    background-color: #003366;
-
-  }
-  
-  .bg-wrapper {
-    position: relative;
-    
-  }
-  
-  .bg-video {
-    width: 100%;
-    height: auto;
-  }
-  
-  .heading-section {
-    position: absolute;
-    top: 5%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white;
-  }
-  
-  .heading-title {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-  }
-  
-  .establish-title {
-    font-size: 1.5em;
-  }
-
-  .game-section{
-    background-color: #003366;
-  }
-
-.gaming-header{
-    color: white;
-    font-family: 'Poppins';
+  position: relative;
+  background-color: #003366;
 }
 
+.bg-wrapper {
+  position: relative;
+}
 
-.game-grid{
+.bg-video {
+  width: 100%;
+  height: auto;
+}
+
+.heading-section {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.heading-title {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.establish-title {
+  font-size: 1.5em;
+}
+
+.game-section {
+  background-color: #003366;
+}
+
+.gaming-header {
+  color: white;
+  font-family: "Poppins";
+}
+
+.game-grid {
   display: flex;
-  column-gap: 30px;
+  column-gap: 20px;
+  /* width: 3000px; */
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  row-gap: 20px;
 }
 
-.grid-item{
+.grid-item {
   position: relative;
   overflow: hidden;
   border-radius: 8px;
@@ -68,7 +66,7 @@
   transition: opacity 0.3s ease-in-out;
 }
 
-.bg-image{
+.bg-image {
   width: 350px;
   height: 100%;
   background-size: cover;
@@ -84,33 +82,33 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-size: 25px;
   color: white;
 }
 
 @font-face {
   font-family: "Poppins";
-  src: local("Poppins"),
-    url(/src/fonts/Poppins-Regular.woff) format("woff");
+  src: local("Poppins"), url(/src/fonts/Poppins-Regular.woff) format("woff");
 }
-
-
-
 
 /* Mobile responsiveness */
 @media screen and (max-width: 768px) {
-    .heading-section {
-        padding-right: 20px; /* Adjust as needed for smaller screens */
-        padding-top: 200px; /* Adjust as needed for smaller screens */
-    }
+  .heading-section {
+    padding-right: 20px;
+    padding-top: 200px;
+  }
 
-    .heading-title {
-        font-size: 50px; /* Adjust as needed for smaller screens */
-    }
+  .heading-title {
+    font-size: 50px;
+  }
 
-    .establish-title {
-        font-size: 20px; /* Adjust as needed for smaller screens */
-        padding-right: 10px; /* Adjust as needed for smaller screens */
-    }
+  .establish-title {
+    font-size: 20px;
+    padding-right: 10px;
+  }
+
+  .game-grid {
+    display: block;
+  }
 }

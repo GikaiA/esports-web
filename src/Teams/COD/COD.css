@@ -30,6 +30,7 @@
   position: relative;
   z-index: 2;
   padding-top: 30px;
+  padding-bottom: 20px;
 }
 
 .logo {
@@ -75,7 +76,7 @@
 }
 
 @media screen and (max-width: 600px) {
-  .bg-wrapper {
+  .cod-wrapper {
     height: 50vh; /* Adjust the height for smaller screens */
   }
 

@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from "react";
 import "./Navbar.css";
 
@@ -6,6 +7,10 @@ const Navbar = () => {
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
+  };
+
+  const toggleDropdown = () => {
+    setMobileMenuOpen(false);
   };
 
   return (
@@ -27,7 +32,11 @@ const Navbar = () => {
           </a>
         </div>
         <div className="navbar-title">
-          <a href="" className="navbar-title-link">
+          <a
+            href=""
+            className={`navbar-title-link ${mobileMenuOpen ? "active" : ""}`}
+            onClick={toggleDropdown}
+          >
             Teams
           </a>
           <div className="dropdown">
