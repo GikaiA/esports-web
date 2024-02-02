@@ -1,0 +1,32 @@
+.progress-section {
+  padding-top: 20px;
+}
+
+.main-logo {
+  width: 400px;
+  /* animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; */
+  animation: fadeinout 8s linear forwards;
+
+}
+
+.progress-bar {
+  padding-top: 30px;
+}
+
+
+@keyframes fadeinout {
+    0%,100% { opacity: 0; }
+    50% { opacity: 1; }
+  }
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

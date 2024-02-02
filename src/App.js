@@ -11,6 +11,7 @@ import LOL from "./Teams/LOL/LOL";
 import Smash from "./Teams/Smash/Smash";
 import Valorant from "./Teams/Valorant/Valorant";
 import Footer from "./Footer/Footer";
+import Loading from "./Loading/Loading";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Homepage />} />
+          <Route path="/loading" element={<Loading/>}/>
           <Route path="/aboutus" element={<About />} />
           <Route path="/teams/call-of-duty" element={<COD />} />
           <Route path="/teams/overwatch" element={<OW />} />
