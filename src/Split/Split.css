@@ -1,8 +1,7 @@
 .split-screen {
     display: flex;
-    height: 100vh;
+    height: 63vh;
     overflow: hidden;
-    padding-top: 25px;
   }
   
   .left-pane,
@@ -14,13 +13,32 @@
   }
   
   .left-pane {
-    background-color: #f1f1f1;
+    background-image: url("../images/casual.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* opacity: 0.4; */
   }
   
   .right-pane {
-    background-color: #fff;
+    background-image: url('../images/comp.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   
+  .paragraph{
+    color: white;
+    font-family: "Poppins";
+    font-weight: bold;
+  }
+
+  .casual-paragraph{
+    font-size: 16px;
+  }
+
+  .comp-paragraph{
+    font-size: 16px;
+  }
+
   @media (max-width: 768px) {
     .split-screen {
       flex-direction: column;

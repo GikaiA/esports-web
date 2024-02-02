@@ -71,6 +71,9 @@ function Homepage() {
           </div>
         </div>
       </div>
+      <div className="split-section">
+        <h1 className="community-title"> A Balanced Community </h1>
+      </div>
       <Split />
     </div>
   );

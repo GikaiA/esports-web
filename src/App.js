@@ -12,6 +12,7 @@ import Smash from "./Teams/Smash/Smash";
 import Valorant from "./Teams/Valorant/Valorant";
 import Footer from "./Footer/Footer";
 import Loading from "./Loading/Loading";
+import Socials from './Socials/Socials';
 
 function App() {
   return (
@@ -29,8 +30,9 @@ function App() {
           <Route path="/teams/league-of-legends" element={<LOL />} />
           <Route path="/teams/smash" element={<Smash />} />
           <Route path="/teams/valorant" element={<Valorant />} />
+          <Route path="/socials" element={<Socials/>}/>
         </Routes>
-        {/* <Footer /> */}
+         <Footer />
       </BrowserRouter>
     </div>
   );

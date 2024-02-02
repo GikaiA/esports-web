@@ -87,6 +87,11 @@
   color: white;
 }
 
+.community-title{
+  color: white;
+  font-family: 'Poppins';
+}
+
 @font-face {
   font-family: "Poppins";
   src: local("Poppins"), url(/src/fonts/Poppins-Regular.woff) format("woff");

@@ -3,7 +3,8 @@ import './Socials.css';
 
 function Socials() {
   return (
-    <div>
+    <div className='socials-section'>
+      
       
     </div>
   )
