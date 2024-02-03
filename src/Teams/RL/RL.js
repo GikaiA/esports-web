@@ -1,6 +1,7 @@
 import React from "react";
 import "./RL.css";
 import rocketlogo from "../RL/RL-Logo.png";
+import ReactTwitchEmbedVideo from "react-twitch-embed-video";
 
 function RL() {
   return (
@@ -36,15 +37,12 @@ function RL() {
           <h1 className="rocket-roster-title">Main Roster</h1>
           <p className="rocket-roster">TBD</p>
           <div className="twitch-section">
-            <iframe
-              title="Twitch Stream"
-              src="https://player.twitch.tv/?channel=owlsesportsfl&muted=true"
-              height="491"
-              width="850"
-              frameBorder="0"
-              scrolling="no"
-              allowFullScreen
-            />
+            <ReactTwitchEmbedVideo
+              channel="owlsesportsfl"
+              layout="video"
+              height={500}
+              width={800}
+            ></ReactTwitchEmbedVideo>
           </div>
         </div>
       </div>

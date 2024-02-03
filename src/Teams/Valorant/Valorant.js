@@ -1,6 +1,7 @@
 import React from "react";
 import "./Valorant.css";
 import vallogo from "../Valorant/ValorantLogo.png";
+import ReactTwitchEmbedVideo from "react-twitch-embed-video";
 
 function Valorant() {
   return (
@@ -24,15 +25,12 @@ function Valorant() {
           <h1 className="val-roster-title">Main Roster</h1>
           <p className="roster-text">TBD</p>
           <div className="twitch-section">
-            <iframe
-              title="Twitch Stream"
-              src="https://player.twitch.tv/?channel=owlsesportsfl&muted=true"
-              height="491"
-              width="850"
-              frameBorder="0"
-              scrolling="no"
-              allowFullScreen
-            />
+            <ReactTwitchEmbedVideo
+              channel="owlsesportsfl"
+              layout="video"
+              height={500}
+              width={800}
+            ></ReactTwitchEmbedVideo>
           </div>
         </div>
       </div>

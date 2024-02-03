@@ -1,6 +1,7 @@
 import React from "react";
 import "./OW.css";
 import ow2 from "../OW/OW Logo.png";
+import ReactTwitchEmbedVideo from "react-twitch-embed-video";
 
 function OW() {
   return (
@@ -29,15 +30,12 @@ function OW() {
           <h1>Main Roster</h1>
           <p className="ow-roster-text">TBA</p>{" "}
           <div className="twitch-section">
-            <iframe
-              title="Twitch Stream"
-              src="https://player.twitch.tv/?channel=owlsesportsfl&muted=true"
-              height="491"
-              width="850"
-              frameBorder="0"
-              scrolling="no"
-              allowFullScreen
-            />
+            <ReactTwitchEmbedVideo
+              channel="owlsesportsfl"
+              layout="video"
+              height={500}
+              width={800}
+            ></ReactTwitchEmbedVideo>
           </div>
         </div>
       </div>

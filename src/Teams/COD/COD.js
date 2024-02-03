@@ -1,6 +1,7 @@
 import React from "react";
 import "./COD.css";
 import codlogo from "../COD/COD Logo.png";
+import ReactTwitchEmbedVideo from "react-twitch-embed-video";
 
 function COD() {
   return (
@@ -24,15 +25,12 @@ function COD() {
           <h1 className="cod-roster-title">Main Roster</h1>
           <p className="roster-paragraph">Roster TBA</p>
           <div className="twitch-section">
-            <iframe
-              title="Twitch Stream"
-              src="https://player.twitch.tv/?channel=owlsesportsfl&muted=true"
-              height="480"
-              width="800"
-              frameBorder="0"
-              scrolling="no"
-              allowFullScreen
-            />
+          <ReactTwitchEmbedVideo
+          channel="owlsesportsfl"
+          layout="video"
+          height={500}
+          width={800}
+        ></ReactTwitchEmbedVideo> 
           </div>
         </div>
       </div>

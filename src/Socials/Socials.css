@@ -1,0 +1,10 @@
+.media-title{
+    color: white;
+    font-family: 'Poppins';
+}
+
+
+.twitch{
+   display: flex;
+   justify-content: center;
+}

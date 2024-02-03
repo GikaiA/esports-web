@@ -1,6 +1,7 @@
 import React from "react";
 import "./Smash.css";
 import smashlogo from "../Smash/Smash Logo.png";
+import ReactTwitchEmbedVideo from "react-twitch-embed-video";
 
 function Smash() {
   return (
@@ -27,15 +28,14 @@ function Smash() {
         <div className="smash-roster">
           <h1>Main Roster</h1>
           <p className="smash-roster-text">TBA</p>
-          <iframe
-            title="Twitch Stream"
-            src="https://player.twitch.tv/?channel=owlsesportsfl&muted=true"
-            height="491"
-            width="850"
-            frameBorder="0"
-            scrolling="no"
-            allowFullScreen
-          />
+          <div className="twitch-section">
+            <ReactTwitchEmbedVideo
+              channel="owlsesportsfl"
+              layout="video"
+              height={500}
+              width={800}
+            ></ReactTwitchEmbedVideo>{" "}
+          </div>
         </div>
       </div>
     </div>

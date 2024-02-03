@@ -1,6 +1,7 @@
 import React from "react";
 import "./CSGO.css";
 import cs2 from "./cs2-logo.png";
+import ReactTwitchEmbedVideo from "react-twitch-embed-video";
 
 function CSGO() {
   return (
@@ -26,15 +27,12 @@ function CSGO() {
           <h1 className="csgo-roster-title">Main Roster</h1>
           <p className="csgo-roster-paragraph">Roster TBA</p>
           <div className="twitch-section">
-            <iframe
-              title="Twitch Stream"
-              src="https://player.twitch.tv/?channel=owlsesportsfl&muted=true"
-              height="480"
-              width="400"
-              frameBorder="0"
-              scrolling="no"
-              allowFullScreen
-            />
+          <ReactTwitchEmbedVideo
+          channel="owlsesportsfl"
+          layout="video"
+          height={500}
+          width={800}
+        ></ReactTwitchEmbedVideo> 
           </div>
         </div>
       </div>
