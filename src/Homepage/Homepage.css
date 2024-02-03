@@ -62,7 +62,6 @@
   border: none;
   background-size: cover;
   color: transparent;
-  cursor: pointer;
   transition: opacity 0.3s ease-in-out;
 }
 
@@ -71,10 +70,17 @@
   height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
+  transition: 0.3s;
+  cursor: pointer;
 }
 
 .grid-item:hover .button {
   opacity: 0.8;
+}
+
+
+.bg-image:hover{
+  scale: 1.04;
 }
 
 .button-text {

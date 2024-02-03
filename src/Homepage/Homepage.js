@@ -29,45 +29,59 @@ function Homepage() {
         </div>
         <div className="game-grid">
           <div className="grid-item">
-            <img src={cs2} alt="cs2-bg" className="bg-image"></img>
+            <img src={mw3} alt="cs2-bg" className="bg-image"></img>
             <button className="button">
-              <span className="button-text">Counter-Strike 2</span>
+              <a href="/teams/call-of-duty">
+                <span className="button-text">Call of Duty</span>
+              </a>
             </button>
           </div>
           <div className="grid-item">
             <img src={lol} alt="lol-bg" className="bg-image"></img>
             <button className="button">
-              <span className="button-text">League of Legends</span>
+              <a href="/teams/league-of-legends">
+                <span className="button-text">League of Legends</span>
+              </a>
             </button>
           </div>
           <div className="grid-item">
-            <img src={ow} alt="ow-bg" className="bg-image"></img>
+            <img src={cs2} alt="ow-bg" className="bg-image"></img>
             <button className="button">
-              <span className="button-text">Overwatch 2</span>
+              <a href="/teams/csgo">
+                <span className="button-text">Counter-Strike 2</span>
+              </a>
             </button>
           </div>
           <div className="grid-item">
             <img src={smash} alt="smash-bg" className="bg-image"></img>
             <button className="button">
-              <span className="button-text">Smash Bros</span>
+              <a href="/teams/smash">
+                <span className="button-text">Smash Bros</span>
+              </a>
             </button>
           </div>
           <div className="grid-item">
             <img src={val} alt="val-bg" className="bg-image"></img>
             <button className="button">
-              <span className="button-text">Valorant</span>
+              <a href="/teams/valorant">
+                <span className="button-text">Valorant</span>
+              </a>
             </button>
           </div>
           <div className="grid-item">
             <img src={rocket} alt="rocket-bg" className="bg-image"></img>
             <button className="button">
-              <span className="button-text">Rocket League</span>
+              <a href="/teams/rocket-league">
+                <span className="button-text">Rocket League</span>
+              </a>
             </button>
           </div>
           <div className="grid-item">
-            <img src={mw3} alt="mw3-bg" className="bg-image"></img>
+            <img src={ow} alt="mw3-bg" className="bg-image"></img>
             <button className="button">
-              <span className="button-text">Call of Duty</span>
+              <a href="/teams/overwatch">
+                <span className="button-text">Overwatch 2</span>
+              </a>
             </button>
           </div>
         </div>
@@ -79,7 +93,7 @@ function Homepage() {
       <div className="contact-section">
         <h1 className="contact-title">Contact Us!</h1>
       </div>
-      <Contact/>
+      <Contact />
     </div>
   );
 }
