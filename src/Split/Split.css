@@ -16,13 +16,21 @@
     background-image: url("../images/casual.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    /* opacity: 0.4; */
+    opacity: 0.6;
+    transition: 0.5s;
   }
   
   .right-pane {
     background-image: url('../images/comp.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    opacity: 0.6;
+    transition: 0.5s;
+  }
+
+  .left-pane:hover, .right-pane:hover{
+    scale: 1.02;
+    opacity: 1;
   }
   
   .paragraph{

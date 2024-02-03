@@ -9,6 +9,7 @@ import smash from "../bgbutton/smash-wallpaper.jpg";
 import val from "../bgbutton/valorant-wallpaper.jpg";
 import rocket from "../bgbutton/RL-wallpaper.jpg";
 import Split from "../Split/Split";
+import Contact from "../Contact/Contact";
 
 function Homepage() {
   return (
@@ -75,6 +76,10 @@ function Homepage() {
         <h1 className="community-title"> A Balanced Community </h1>
       </div>
       <Split />
+      <div className="contact-section">
+        <h1 className="contact-title">Contact Us!</h1>
+      </div>
+      <Contact/>
     </div>
   );
 }

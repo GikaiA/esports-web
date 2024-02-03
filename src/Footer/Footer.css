@@ -1,39 +1,33 @@
-/* body{
-    background-color: #cc0000;
-} */
-
-
-.footer-section{
-    display: flex;
+.footer-section {
+  background-color: #838383;
 }
 
-.social-section{
-    display: block;
+.social-section {
+  display: flex;
+  justify-content: space-around;
 }
 
-.follow-us{
-    color: white;
+.social-title {
+  color: white;
+  font-size: 22px;
 }
 
-
-.icons-section{
-    display: flex;
-    color: white;
-    gap: 18px;
-
+.icons-section {
+  display: flex;
+  color: white;
+  gap: 30px;
 }
 
-
-.link{
-    text-decoration: none;
-    color: white;
+.link {
+  text-decoration: none;
+  color: white;
 }
 
-.icon{
-    height: 200px;
-    width: 60px;
+.icon {
+  height: 67px;
+  width: 26px;
 }
 
-.copyright-section{
-    display: flex;
+.copyright-section {
+  display: flex;
 }

@@ -87,9 +87,14 @@
   color: white;
 }
 
-.community-title{
+.community-title {
   color: white;
-  font-family: 'Poppins';
+  font-family: "Poppins";
+}
+
+.contact-title {
+  color: white;
+  font-family: "Poppins";
 }
 
 @font-face {

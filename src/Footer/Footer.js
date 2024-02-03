@@ -10,6 +10,9 @@ function Footer() {
   return (
     <div className="footer-section">
       <div className="social-section">
+        <div className="social-title">
+          <p>© 2024 Owls Esports Club</p>
+        </div>
         <div className="icons-section">
           <a href="https://discord.com/invite/owlsgamingclub" className="link">
             <FaDiscord className="icon" />
@@ -30,9 +33,9 @@ function Footer() {
             <GrYoutube className="icon" />
           </a>
         </div>
-        <div className="copyright-section">
+        {/* <div className="copyright-section">
           <p className="copyright-sentence">© 2024 by Owls Esports Club/ Gikai Andrews </p>
-        </div>
+        </div> */}
       </div>
     </div>
   );
