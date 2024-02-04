@@ -10,6 +10,7 @@ import val from "../bgbutton/valorant-wallpaper.jpg";
 import rocket from "../bgbutton/RL-wallpaper.jpg";
 import Split from "../Split/Split";
 import Contact from "../Contact/Contact";
+import Calendar from "../Calendar/Calendar";
 
 function Homepage() {
   return (
@@ -94,6 +95,7 @@ function Homepage() {
         <h1 className="contact-title">Contact Us!</h1>
       </div>
       <Contact />
+      {/* <Calendar/> */}
     </div>
   );
 }

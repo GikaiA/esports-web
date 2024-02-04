@@ -1,10 +1,49 @@
-.media-title{
-    color: white;
-    font-family: 'Poppins';
+/* Default styles */
+
+.socials-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.media-section {
+  max-width: 800px;
+  margin: auto;
+}
+
+.media-title {
+  text-align: center;
+}
+
+.twitch,
+.instagram,
+.twitter,
+.youtube {
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 
-.twitch{
-   display: flex;
-   justify-content: center;
+.discord-preview{
+  width: 800px;
+  height: 600px;
+}
+
+.embed-container {
+  width: 100%;
+  height: 100%;
+}
+/* Media query for smaller screens (adjust the max-width as needed) */
+
+@media screen and (max-width: 600px) {
+  .media-section {
+    max-width: 100%;
+  }
+
+  .twitch,
+  .instagram,
+  .twitter,
+  .youtube {
+    width: 100%;
+  }
 }

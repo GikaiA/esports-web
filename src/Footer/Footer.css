@@ -1,15 +1,22 @@
 .footer-section {
+  position: fixed;
   background-color: #838383;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
 
 .social-section {
   display: flex;
   justify-content: space-around;
+  align-items: center; 
+  padding: 10px; 
 }
 
 .social-title {
   color: white;
   font-size: 22px;
+  margin: 0; 
 }
 
 .icons-section {
@@ -30,4 +37,6 @@
 
 .copyright-section {
   display: flex;
+  align-items: center;
+  padding: 10px; 
 }

@@ -13,12 +13,14 @@ import Valorant from "./Teams/Valorant/Valorant";
 import Footer from "./Footer/Footer";
 import Loading from "./Loading/Loading";
 import Socials from './Socials/Socials';
+import Background from "./Background";
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
         <Navbar />
+        <Background/>
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/loading" element={<Loading/>}/>
