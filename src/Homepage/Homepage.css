@@ -127,4 +127,13 @@
   .game-grid {
     display: block;
   }
+
+  .casual-paragraph{
+    font-size: 10.5px;
+  }
+
+  .comp-paragraph{
+    font-size: 10.5px;
+  }
+
 }

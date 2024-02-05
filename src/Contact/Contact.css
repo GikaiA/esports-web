@@ -1,7 +1,7 @@
 .contact-form-section {
     text-align: center;
     background-color: #003366;
-    margin-bottom: 20px;
+    margin-bottom: 100px;
   }
   
   .contact-form {
@@ -50,4 +50,27 @@
   
   button:hover {
     background-color: #45a049;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .input-field,
+    .message-box {
+      width: 100%; /* Adjust width for smaller screens */
+    }
+  
+    button {
+      font-size: 18px; /* Adjust font size for smaller screens */
+    }
+
+    .contact-form-section{
+      margin-bottom: 125px;
+    }
+
+  }
+  
+  /* Media queries for even smaller screens */
+  @media only screen and (max-width: 480px) {
+    .contact-form label {
+      font-size: 18px; /* Adjust font size for even smaller screens */
+    }
   }

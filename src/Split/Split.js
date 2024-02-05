@@ -6,7 +6,7 @@ const SplitScreen = () => {
     <div className="split-screen">
       <div className="left-pane">
         <div className="paragraph">
-          <h2>Casual</h2>
+          <h2 className="casual-title">Casual</h2>
           <p className="casual-paragraph">
             In our casual gaming haven, there's no need to fret if the cutthroat
             world of esports isn't your cup of tea. Our club recognizes and
@@ -28,7 +28,7 @@ const SplitScreen = () => {
       </div>
       <div className="right-pane">
         <div className="paragraph">
-          <h2>Competitive</h2>
+          <h2 className="comp-title">Competitive</h2>
           <p className="comp-paragraph">
             In the vibrant world of competitive video gaming, our club stands as
             a haven for those fueled by a passion for esports. For individuals

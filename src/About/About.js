@@ -1,10 +1,11 @@
 import React from "react";
 import "./About.css";
-import owlslogo from '../images/owls-esports.png'
+import owlslogo from "../images/owls-esports.png";
 
 function About() {
   return (
     <div className="about-us-section">
+      <img src={owlslogo} alt="owls-logo" className="owls-logo"></img>
       <p className="about-us-text">
         The club, founded in Spring 2019 by Julie Tomanio as its first
         president, initially aimed to collaborate with the arena. However, this
@@ -18,7 +19,6 @@ function About() {
         Council, successfully obtaining approval and official recognition as a
         sports club.
       </p>
-      <img src={owlslogo} alt="owls-logo" className="owls-logo"></img>
     </div>
   );
 }

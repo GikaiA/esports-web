@@ -32,7 +32,7 @@
     scale: 1.02;
     opacity: 1;
   }
-  
+
   .paragraph{
     color: white;
     font-family: "Poppins";
@@ -55,6 +55,19 @@
     .left-pane,
     .right-pane {
       width: 100%;
+      opacity: 1;
+    }
+
+    .casual-paragraph{
+      font-size: 10px;
+    }
+  
+    .comp-paragraph{
+      font-size: 10.5px;
+    }
+
+    h2{
+      font-size: 13px;
     }
   }
   

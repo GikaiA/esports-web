@@ -95,7 +95,6 @@ function Homepage() {
         <h1 className="contact-title">Contact Us!</h1>
       </div>
       <Contact />
-      {/* <Calendar/> */}
     </div>
   );
 }

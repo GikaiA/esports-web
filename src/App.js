@@ -14,6 +14,7 @@ import Footer from "./Footer/Footer";
 import Loading from "./Loading/Loading";
 import Socials from './Socials/Socials';
 import Background from "./Background";
+// import Calendar from "./Calendar/Calendar";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
           <Route path="/teams/smash" element={<Smash />} />
           <Route path="/teams/valorant" element={<Valorant />} />
           <Route path="/socials" element={<Socials/>}/>
+          {/* <Route path="/calendar" element={<Calendar/>}></Route> */}
         </Routes>
          <Footer />
       </BrowserRouter>

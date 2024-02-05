@@ -5,7 +5,8 @@ body {
 .about-us-section {
   display: block;
   align-items: center;
-  padding-top: 200px;
+  /* padding-top: 200px; */
+  margin-bottom: 90px;
 }
 
 .about-us-text {
@@ -15,7 +16,7 @@ body {
 }
 
 .owls-logo {
-  height: 600px;
+  height: 450px;
 }
 
 @font-face {
@@ -25,7 +26,7 @@ body {
 
 @media only screen and (max-width: 768px) {
   .about-us-section {
-    padding-top: 25px; /* Adjust the padding for smaller screens */
+    padding-top: 50px; /* Adjust the padding for smaller screens */
   }
 
   .about-us-text {
@@ -33,7 +34,7 @@ body {
   }
 
   .owls-logo {
-    height: auto; /* Allow the logo to shrink with smaller screens */
+    height: 200px; /* Allow the logo to shrink with smaller screens */
     max-width: 100%; /* Make sure the logo doesn't overflow its container */
   }
 }
