@@ -20,10 +20,10 @@ function Socials() {
         </div>
         <div className="instagram">
           <h1 className="media-title">Instagram</h1>
-          {/* <InstagramEmbed
+          <InstagramEmbed
             url="https://www.instagram.com/owlsesportsgamingclub/"
             width={800}
-          ></InstagramEmbed> */}
+          ></InstagramEmbed>
         </div>
         <div className="twitter">
           <h1 className="media-title">Twitter/X</h1>
