@@ -73,8 +73,9 @@
   }
 
   .csgo-logo {
-    width: 100%; /* Set width to 100% to make it responsive */
-    margin-top: 60px; /* Adjust margin-top based on your design */
+    width: 600px;
+    margin-top: 60px;
+    margin-bottom: 20p
   }
 
   .csgo-roster-title {
