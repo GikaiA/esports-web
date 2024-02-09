@@ -3,7 +3,7 @@
 }
 
 .main-logo {
-  width: 600px;
+  width: 400px;
   animation: fadeinout 8s linear forwards;
   animation-iteration-count: infinite;
 }
@@ -26,5 +26,8 @@
   .main-logo {
     width: 300px;
     padding-top: 110px;
+  }
+  .progress-bar{
+    width: 428px
   }
 }

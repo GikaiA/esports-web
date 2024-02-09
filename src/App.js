@@ -24,8 +24,8 @@ function App() {
         <Navbar />
         <Background />
         <Routes>
-          <Route path="/" element={<Homepage />} />
-          <Route path="/loading" element={<Loading />} />
+          <Route path="/home" element={<Homepage />} />
+          <Route path="/" element={<Loading />} />
           {/* <PageTransition preset="fade" transitionKey={location.pathname}> */}
           <Route path="/aboutus" element={<About />} />
           <Route path="/teams/call-of-duty" element={<COD />} />

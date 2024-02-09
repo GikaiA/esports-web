@@ -23,9 +23,9 @@ const Loading = () => {
     return () => clearInterval(timer);
   }, []);
 
-  // if (redirect) {
-  //   return <Navigate to="/"></Navigate>;
-  // }
+  if (redirect) {
+    return <Navigate to="/home"></Navigate>;
+  }
   return (
     <div className="progress-section">
       <div className="main-logo-section">

@@ -22,7 +22,7 @@ const Navbar = () => {
       </div>
       <div className={`navbar-links ${mobileMenuOpen ? "active" : ""}`}>
         <div className="navbar-title">
-          <a href="/" className="navbar-title-link">
+          <a href="/home" className="navbar-title-link">
             Home
           </a>
         </div>
