@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes} from "react-router-dom";
 import { PageTransition } from "@steveeeie/react-page-transition";
 import Homepage from "./Homepage/Homepage";
 import Navbar from "./Navbar/Navbar";

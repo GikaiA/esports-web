@@ -23,9 +23,9 @@ const Loading = () => {
     return () => clearInterval(timer);
   }, []);
 
-  if (redirect) {
-    return <Navigate to="/"></Navigate>;
-  }
+  // if (redirect) {
+  //   return <Navigate to="/"></Navigate>;
+  // }
   return (
     <div className="progress-section">
       <div className="main-logo-section">
@@ -34,11 +34,11 @@ const Loading = () => {
       <ProgressBar
         className="progress-bar"
         completed={progress}
-        bgColor="linear-gradient(red, blue)"
+        bgColor="linear-gradient(to right, red, blue)"
         labelColor="#ffff"
         maxCompleted={100}
-        height="35px"
-        width="auto"
+        height="45px"
+        width="100%"
       />
     </div>
   );
