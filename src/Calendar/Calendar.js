@@ -1,64 +1,54 @@
 // import React, { useState, useEffect } from 'react';
-// import axios from 'axios';
-// import ical from 'ical';
+// import Calendar from 'react-calendar';
+// import 'react-calendar/dist/Calendar.css'; // Import the CSS for styling
+// import ical from 'node-ical'; // Import the node-ical library
 
 // const CalendarData = () => {
-//   const [events, setEvents] = useState([]);
-//   const [loading, setLoading] = useState(true);
-
-//   useEffect(() => {
-//     const fetchCalendarData = async () => {
-//       try {
-//         const url = "https://api.leaguespot.gg/api/v1/organizations/bca41034-70d5-41c4-a09a-092c5d4c3565.ics";
-//         const response = await axios.get(url);
-//         const data = response.data;
-
-//         // Parse ICS data using ical
-//         const parsedData = ical.parseICS(data);
-//         const parsedEvents = [];
-
-//         for (let k in parsedData) {
-//           if (parsedData.hasOwnProperty(k)) {
-//             const event = parsedData[k];
-//             if (event.type === 'VEVENT') {
-//               parsedEvents.push({
-//                 start: new Date(event.start),
-//                 end: new Date(event.end),
-//                 summary: event.summary
-//               });
-//             }
-//           }
+//     const [events, setEvents] = useState([]); // State to store parsed events
+//     const [loading, setLoading] = useState(true); // State to track loading state
+  
+//     useEffect(() => {
+//       const fetchCalendarData = async () => {
+//         try {
+//           // Fetch the ICS file locally
+//           const response = await fetch('/src/data/bca41034-70d5-41c4-a09a-092c5d4c3565.ics');
+//           const data = await response.text();
+  
+//           // Parse the ICS data using node-ical
+//           const parsedData = ical.sync.parseICS(data);
+  
+//           // Extract event information
+//           const parsedEvents = Object.values(parsedData).map((event) => ({
+//             start: new Date(event.start),
+//             end: new Date(event.end),
+//             summary: event.summary
+//           }));
+  
+//           // Update state with parsed events
+//           setEvents(parsedEvents);
+//           setLoading(false);
+//         } catch (error) {
+//           console.error('Error fetching calendar data:', error);
+//           // Handle error, e.g., show a message to the user
+//           setLoading(false);
 //         }
-
-//         // Update state with parsed events
-//         setEvents(parsedEvents);
-//         setLoading(false);
-//       } catch (error) {
-//         console.error('Error fetching calendar data:', error);
-//         // Handle error, e.g., show a message to the user
-//         setLoading(false);
-//       }
-//     };
-
-//     fetchCalendarData();
-//   }, []);
-
-//   return (
-//     <div style={{ color: 'white', backgroundColor: 'red', padding: '20px' }}>
-//       <h2 style={{ color: 'white', backgroundColor: 'red', padding: '10px', marginBottom: '20px' }}>Calendar Events</h2>
-//       {loading ? (
-//         <p>Loading...</p>
-//       ) : (
-//         <ul>
-//           {events.map((event, index) => (
-//             <li key={index} style={{ color: 'white', backgroundColor: 'red', padding: '10px', marginBottom: '5px' }}>
-//               <strong>{event.summary}</strong> - {event.start.toString()} to {event.end.toString()}
-//             </li>
-//           ))}
-//         </ul>
-//       )}
-//     </div>
-//   );
-// };
+//       };
+  
+//       fetchCalendarData();
+//     }, []);
+  
+//     return (
+//       <div>
+//         <h1>My Calendar</h1>
+//         {loading ? ( // Display loading message while data is being fetched
+//           <p>Loading...</p>
+//         ) : (
+//           <Calendar
+//             events={events} // Pass the events data to the calendar
+//           />
+//         )}
+//       </div>
+//     );
+//   };
 
 // export default CalendarData;
