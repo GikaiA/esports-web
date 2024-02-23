@@ -25,12 +25,16 @@ function COD() {
           <h1 className="cod-roster-title">Main Roster</h1>
           <p className="roster-paragraph">Roster TBA</p>
           <div className="twitch-section">
-          <ReactTwitchEmbedVideo
+            <div className="video-container">
+             <ReactTwitchEmbedVideo
           channel="owlsesportsfl"
           layout="video"
-          height={500}
-          width={800}
-        ></ReactTwitchEmbedVideo> 
+          className="twitch-video"
+          height={1080}
+          width={1280}
+        ></ReactTwitchEmbedVideo>   
+            </div>
+         
           </div>
         </div>
       </div>

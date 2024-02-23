@@ -7,6 +7,8 @@
   max-width: 100%;
   overflow: hidden;
   position: relative;
+  overflow: scroll;
+-webkit-overflow-scrolling: touch;
 }
 
 .cod-parallax-bg {
@@ -77,6 +79,22 @@
   width: 100%;
 }
 
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1000px;
+  height: 800px;
+}
+
 @media screen and (max-width: 768px) {
   .cod-wrapper {
     height: 50vh; /* Adjust the height for smaller screens */
@@ -99,4 +117,14 @@
     padding-bottom: 20px;
     max-width: 100%;
   }
+
+  .video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 }

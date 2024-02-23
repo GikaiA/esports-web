@@ -6,6 +6,8 @@
     max-width: 100%;
     overflow: hidden;
     position: relative;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;  
   }
   
   .smash-parallax-bg {
