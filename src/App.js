@@ -13,6 +13,7 @@ import Valorant from "./Teams/Valorant/Valorant";
 import Footer from "./Footer/Footer";
 import Socials from "./Socials/Socials";
 import Background from "./Background";
+import Teams from "./Teams/Teams";
 // import Calendar from "./Calendar/Calendar";
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/aboutus" element={<About />} />
+          <Route path="/teams" element={<Teams/>}/>
           <Route path="/teams/call-of-duty" element={<COD />} />
           <Route path="/teams/overwatch" element={<OW />} />
           <Route path="/teams/rocket-league" element={<RL />} />
