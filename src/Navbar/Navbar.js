@@ -22,7 +22,7 @@ const Navbar = () => {
       </div>
       <div className={`navbar-links ${mobileMenuOpen ? "active" : ""}`}>
         <div className="navbar-title">
-          <a href="/home" className="navbar-title-link">
+          <a href="/" className="navbar-title-link">
             Home
           </a>
         </div>
@@ -33,11 +33,11 @@ const Navbar = () => {
         </div>
         <div className="navbar-title">
           <a
-            href=""
+            href="/teams"
             className={`navbar-title-link ${mobileMenuOpen ? "active" : ""}`}
             onClick={toggleDropdown}
           >
-            Teams &nbsp;▼
+            Teams
           </a>
           <div className="dropdown">
             <a href="/teams/call-of-duty" className="dropdown-title">
