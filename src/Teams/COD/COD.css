@@ -7,8 +7,6 @@
   max-width: 100%;
   overflow: hidden;
   position: relative;
-  overflow: scroll;
--webkit-overflow-scrolling: touch;
 }
 
 .cod-parallax-bg {
@@ -46,7 +44,7 @@
   padding: 20px;
   width: 100%;
   box-sizing: border-box;
-  margin-top: auto; 
+  /* margin-top: auto;  */
   position: relative;
   z-index: -1;
 }

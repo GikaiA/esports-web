@@ -24,17 +24,21 @@ function Homepage() {
         {/* <h1 className="heading-title">Owls Esports Gaming Club</h1>
         <h2 className="establish-title">Est. 2019</h2> */}
       </div>
+      <div className="split-section">
+        <h1 className="community-title"> A Balanced Community </h1>
+      </div>
+      <Split />
       <div className="game-section">
         <div className="game-title">
           <h1 className="gaming-header">Games We Play</h1>
         </div>
         <div className="game-grid">
           <div className="grid-item">
-            <img src={mw3} alt="cs2-bg" className="bg-image"></img>
+          <a href="/teams/call-of-duty"><img src={mw3} alt="cs2-bg" className="bg-image"></img></a>
             <button className="button">
-              <a href="/teams/call-of-duty">
+              {/* <a href="/teams/call-of-duty"> */}
                 <span className="button-text">Call of Duty</span>
-              </a>
+              {/* </a> */}
             </button>
           </div>
           <div className="grid-item">
@@ -87,10 +91,10 @@ function Homepage() {
           </div>
         </div>
       </div>
-      <div className="split-section">
+      {/* <div className="split-section">
         <h1 className="community-title"> A Balanced Community </h1>
       </div>
-      <Split />
+      <Split /> */}
       <div className="contact-section">
         <h1 className="contact-title">Contact Us!</h1>
       </div>

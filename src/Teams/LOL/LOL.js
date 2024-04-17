@@ -1,7 +1,6 @@
 import React from "react";
 import "./LOL.css";
 import lol from "../LOL/LOL-logo.png";
-import ReactTwitchEmbedVideo from "react-twitch-embed-video";
 
 function LOL() {
   return (
@@ -31,14 +30,6 @@ function LOL() {
         <div className="roster-paragraph">
           <h1 className="lol-roster">Main Roster</h1>
           <p className="lol-roster-text">TBA</p>
-          <div className="twitch-section">
-            <ReactTwitchEmbedVideo
-              channel="owlsesportsfl"
-              layout="video"
-              height={500}
-              width={800}
-            ></ReactTwitchEmbedVideo>
-          </div>
         </div>
       </div>
     </div>

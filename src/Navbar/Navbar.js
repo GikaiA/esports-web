@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from "react";
 import "./Navbar.css";
 
@@ -32,13 +31,12 @@ const Navbar = () => {
           </a>
         </div>
         <div className="navbar-title">
-          <a
-            href="/teams"
+          <p
             className={`navbar-title-link ${mobileMenuOpen ? "active" : ""}`}
             onClick={toggleDropdown}
           >
             Teams
-          </a>
+          </p>
           <div className="dropdown">
             <a href="/teams/call-of-duty" className="dropdown-title">
               Call of Duty

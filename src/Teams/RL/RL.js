@@ -36,14 +36,6 @@ function RL() {
         <div className="rocket-roster">
           <h1 className="rocket-roster-title">Main Roster</h1>
           <p className="rocket-roster">TBD</p>
-          <div className="twitch-section">
-            <ReactTwitchEmbedVideo
-              channel="owlsesportsfl"
-              layout="video"
-              height={500}
-              width={800}
-            ></ReactTwitchEmbedVideo>
-          </div>
         </div>
       </div>
     </div>

@@ -1,7 +1,6 @@
 import React from "react";
 import "./COD.css";
 import codlogo from "../COD/COD Logo.png";
-import ReactTwitchEmbedVideo from "react-twitch-embed-video";
 
 function COD() {
   return (
@@ -24,18 +23,6 @@ function COD() {
         <div className="cod-roster">
           <h1 className="cod-roster-title">Main Roster</h1>
           <p className="roster-paragraph">Roster TBA</p>
-          <div className="twitch-section">
-            <div className="video-container">
-             <ReactTwitchEmbedVideo
-          channel="owlsesportsfl"
-          layout="video"
-          className="twitch-video"
-          height={1080}
-          width={1280}
-        ></ReactTwitchEmbedVideo>   
-            </div>
-         
-          </div>
         </div>
       </div>
     </div>
