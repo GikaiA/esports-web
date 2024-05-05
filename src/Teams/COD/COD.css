@@ -1,128 +1,25 @@
-/* cod.css */
-.cod-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 100vh;
-  max-width: 100%;
-  overflow: hidden;
-  position: relative;
-}
-
-.cod-parallax-bg {
-  background-image: url("/src/images/MW3-hero.jpeg");
-  background-position: center;
-  background-repeat: no-repeat;
+.hero{
   background-size: cover;
-  background-attachment: fixed; /* Add parallax effect */
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  background-repeat: no-repeat;
   z-index: -1;
 }
 
-.cod-section {
+.cod-image{
   width: 100%;
-  display: flex;
-  justify-content: center;
-  position: relative;
-  z-index: 2;
-  padding-top: 30px;
-  padding-bottom: 70px;
+  height: auto;
 }
 
-.logo {
-  width: 540px;
-  margin-top: 120px;
-}
-
-.cod-paragraph {
-  color: white;
-  background-color: #000000;
-  padding: 20px;
-  width: 100%;
-  box-sizing: border-box;
-  /* margin-top: auto;  */
-  position: relative;
-  z-index: -1;
-}
-
-.cod-roster {
-  flex: 1;
-  display: block;
-  flex-direction: column;
-  align-items: flex-start;
-  padding-left: 20px;
-  color: white;
-}
-
-.cod-text{
-  font-size: 30px;
-}
-
-.cod-roster-title {
-  font-size: 30px;
-}
-
-.roster-paragraph {
-  font-size: 25px;
-}
-
-.twitch-section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-}
-
-.video-container {
-  position: relative;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio */
-  overflow: hidden;
-}
-
-.video-container iframe,
-.video-container object,
-.video-container embed {
+.logo{
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 1000px;
-  height: 800px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-@media screen and (max-width: 768px) {
-  .cod-wrapper {
-    height: 50vh; /* Adjust the height for smaller screens */
-  }
-
-  .logo,
-  .text-container,
-  .roster-section {
-    padding-left: 13px; /* Adjust padding for smaller screens */
-    display: block;
-    text-align: center;
-  }
-
-  .info-text {
-    text-align: center; /* Center text for smaller screens */
-  }
-
-  .logo {
-    height: 78.5px;
-    padding-bottom: 20px;
-    max-width: 100%;
-  }
-
-  .video-container iframe,
-.video-container object,
-.video-container embed {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+.cod-logo{
+  width: 600px;
 }
+
+.roster-section{
+  background-color: #003366;
 }
