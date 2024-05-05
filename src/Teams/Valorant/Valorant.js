@@ -1,7 +1,6 @@
 import React from "react";
 import "./Valorant.css";
 import vallogo from "../Valorant/ValorantLogo.png";
-import ReactTwitchEmbedVideo from "react-twitch-embed-video";
 
 function Valorant() {
   return (

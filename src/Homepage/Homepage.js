@@ -10,7 +10,6 @@ import val from "../bgbutton/valorant-wallpaper.jpg";
 import rocket from "../bgbutton/RL-wallpaper.jpg";
 import Split from "../Split/Split";
 import Contact from "../Contact/Contact";
-import Calendar from "../Calendar/Calendar";
 
 function Homepage() {
   return (
@@ -92,7 +91,7 @@ function Homepage() {
         </div>
       </div>
       {/* <div className="split-section">
-        <h1 className="community-title"> A Balanced Community </h1>
+        <h1 classNam="community-title"> A Balanced Community </h1>
       </div>
       <Split /> */}
       <div className="contact-section">

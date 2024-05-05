@@ -1,6 +1,5 @@
 import React from "react";
 import "./Socials.css";
-import ReactTwitchEmbedVideo from "react-twitch-embed-video";
 import { YouTubeEmbed } from "react-social-media-embed";
 import { Timeline } from "react-twitter-widgets";
 import { InstagramEmbed } from "react-social-media-embed";
@@ -11,12 +10,6 @@ function Socials() {
       <div className="media-section">
         <h1 className="media-title">Twitch</h1>
         <div className="twitch">
-          <ReactTwitchEmbedVideo
-            channel="owlsesportsfl"
-            layout="video"
-            height={500}
-            width={800}
-          ></ReactTwitchEmbedVideo>
         </div>
         <div className="instagram">
           <h1 className="media-title">Instagram</h1>

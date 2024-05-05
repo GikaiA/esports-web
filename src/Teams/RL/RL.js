@@ -1,7 +1,6 @@
 import React from "react";
 import "./RL.css";
 import rocketlogo from "../RL/RL-Logo.png";
-import ReactTwitchEmbedVideo from "react-twitch-embed-video";
 
 function RL() {
   return (

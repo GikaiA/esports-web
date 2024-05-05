@@ -12,20 +12,17 @@ import Smash from "./Teams/Smash/Smash";
 import Valorant from "./Teams/Valorant/Valorant";
 import Footer from "./Footer/Footer";
 import Socials from "./Socials/Socials";
-import Background from "./Background";
-// import Teams from "./Teams/Teams";
-// import Calendar from "./Calendar/Calendar";
+import Teams from "./Teams/Teams";
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
         <Navbar />
-        {/* <Background /> */}
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/aboutus" element={<About />} />
-          {/* <Route path="/teams" element={<Teams/>}/> */}
+          <Route path="/teams" element={<Teams/>}/>
           <Route path="/teams/call-of-duty" element={<COD />} />
           <Route path="/teams/overwatch" element={<OW />} />
           <Route path="/teams/rocket-league" element={<RL />} />
@@ -34,7 +31,6 @@ function App() {
           <Route path="/teams/smash" element={<Smash />} />
           <Route path="/teams/valorant" element={<Valorant />} />
           <Route path="/socials" element={<Socials />} />
-          {/* <Route path="/calendar" element={<Calendar/>}></Route> */}
         </Routes>
         <Footer />
       </BrowserRouter>
