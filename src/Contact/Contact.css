@@ -1,85 +1,89 @@
-.contact-form-section {
-    text-align: center;
-    background-color: #003366;
-    margin-bottom: 100px;
-  }
-  
-  .contact-form {
-    display: inline-block;
-    text-align: left;
-  }
-  
-  .contact-form label {
-    display: block;
-    margin-bottom: 5px;
-    color: white;
-    font-family: 'Poppins';
-    font-size: 22px;
-  }
-  
-  .input-field,
-  .message-box {
-    width: 400px;
-    max-width: 100%;
-    padding: 8px;
-    margin-bottom: 15px;
-    box-sizing: border-box;
-    border-radius: 6px ;
-    border: none;
-  }
-  
-
-.message-box{
-    margin-bottom: 20px;
+.contact-section {
+  display: flex;
+  justify-content: center;
 }
 
+.contact-form-section {
+  width: 500px;
+  text-align: center;
+  background-color: #ffffff;
+  margin-bottom: 100px;
+  padding: 25px 10px;
+  border-radius: 10px;
+}
 
+.contact-form {
+  display: inline-block;
+  text-align: left;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  color: black;
+  font-family: "Poppins";
+  font-size: 22px;
+}
+
+.input-field,
+.message-box {
+  width: 400px;
+  max-width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  border-radius: 6px;
+  border: none;
+  background-color: lightgray;
+}
+
+.message-box {
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: block;
+  margin-top: 7px;
+  font-size: 22px;
+  transition: 0.4s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+@media only screen and (max-width: 768px) {
+  .input-field,
+  .message-box {
+    width: 100%; /* Adjust width for smaller screens */
+  }
 
   button {
-    background-color: #4caf50;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    display: block;
-    margin-top: 7px;
-    font-size: 22px;
-    transition: 0.4s;
-  }
-  
-  button:hover {
-    background-color: #45a049;
+    font-size: 18px; /* Adjust font size for smaller screens */
   }
 
-  @media only screen and (max-width: 768px) {
-    .input-field,
-    .message-box {
-      width: 100%; /* Adjust width for smaller screens */
-    }
-  
-    button {
-      font-size: 18px; /* Adjust font size for smaller screens */
-    }
-
-    .contact-form-section{
-      margin-bottom: 125px;
-    }
-
+  .contact-form-section {
+    margin-bottom: 125px;
   }
-  
-  /* Media queries for even smaller screens */
-  @media only screen and (max-width: 480px) {
+}
 
-    .contact-form{
-      width: 90%;
-    }
-    .contact-form label {
-      font-size: 18px; /* Adjust font size for even smaller screens */
-    }
-
-    .send-button{
-      display: flex;
-      justify-content: center;
-    }
+/* Media queries for even smaller screens */
+@media only screen and (max-width: 480px) {
+  .contact-form {
+    width: 90%;
   }
+  .contact-form label {
+    font-size: 18px; /* Adjust font size for even smaller screens */
+  }
+
+  .send-button {
+    display: flex;
+    justify-content: center;
+  }
+}

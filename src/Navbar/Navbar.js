@@ -1,25 +1,28 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Navbar.css";
+import owlsesportslogo from "../images/owls-esports.png";
 
 const Navbar = () => {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
-  const toggleMobileMenu = () => {
-    setMobileMenuOpen(!mobileMenuOpen);
-  };
-
-  const toggleDropdown = () => {
-    setMobileMenuOpen(false);
-  };
+ 
 
   return (
     <nav className="navbar">
-      <div className="menu-toggle" onClick={toggleMobileMenu}>
+      <div className="menu-toggle">
         <div className="bar"></div>
         <div className="bar"></div>
         <div className="bar"></div>
       </div>
-      <div className={`navbar-links ${mobileMenuOpen ? "active" : ""}`}>
+      <div className="home-section">
+          <Link to="/">
+            <img
+              src={owlsesportslogo}
+              alt="owls-esports-logo"
+              className="main-logo"
+            ></img>
+          </Link>
+        </div>
+      <div className='navbar-links'>
         <div className="navbar-title">
           <a href="/" className="navbar-title-link">
             Home
@@ -31,35 +34,12 @@ const Navbar = () => {
           </a>
         </div>
         <div className="navbar-title">
-          <p
-            className={`navbar-title-link ${mobileMenuOpen ? "active" : ""}`}
-            onClick={toggleDropdown}
+          <a
+            href="/teams"
+            className='navbar-title-link '
           >
             Teams
-          </p>
-          <div className="dropdown">
-            <a href="/teams/call-of-duty" className="dropdown-title">
-              Call of Duty
-            </a>
-            <a href="/teams/overwatch" className="dropdown-title">
-              Overwatch
-            </a>
-            <a href="/teams/league-of-legends" className="dropdown-title">
-              League of Legends
-            </a>
-            <a href="/teams/csgo" className="dropdown-title">
-              CSGO
-            </a>
-            <a href="/teams/valorant" className="dropdown-title">
-              Valorant
-            </a>
-            <a href="/teams/rocket-league" className="dropdown-title">
-              Rocket League
-            </a>
-            <a href="/teams/smash" className="dropdown-title">
-              Smash Bros
-            </a>
-          </div>
+          </a>
         </div>
         <div className="navbar-title">
           <a href="/socials" className="navbar-title-link">

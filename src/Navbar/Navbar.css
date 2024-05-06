@@ -1,8 +1,8 @@
 .navbar {
-  background-color: #003366;
+  background-color: #0B1B35;
   padding: 10px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   transition-duration: 0.5s;
   font-family: "Oswald";
@@ -12,9 +12,18 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin-right: 10px;
   gap: 53px;
   font-size: 20.5px;
+}
+
+.home-section {
+  display: flex;
+  align-items: center; 
+}
+
+.main-logo {
+  width: 70px;
+  margin-right: auto; 
 }
 
 .navbar-title-link {
@@ -22,6 +31,7 @@
   text-decoration: none;
   transition-duration: 0.3s;
 }
+
 
 .navbar-title-link:hover{
   text-decoration: underline;
@@ -35,108 +45,12 @@
   cursor: pointer;
 }
 
-.dropdown {
-  display: none;
-  position: absolute;
-  background-color: #003366;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  z-index: 9999;
-}
 
-/* Display the dropdown when hovering over the parent */
-.navbar-title:hover .dropdown {
-  display: block;
-}
 
-/* Style the dropdown items */
-.dropdown p {
-  padding: 12px;
-  text-decoration: none;
-  color: #333;
-  display: block;
-}
-
-.dropdown-title{
-  display: block;
-  text-decoration: none;
-  color: white;
-  transition-duration: 0.5s;
-}
-
-.dropdown-title:hover{
-  text-decoration: underline;
-  text-decoration-color: #CC0000;
-  text-decoration-thickness:3px ;
-}
 
 
 @font-face {
   font-family: "Oswald";
   src: local("Oswald"),
     url(../fonts/Oswald-VariableFont_wght.woff) format("woff");
-}
-
-@media screen and (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    align-items: flex-end;
-  }
-
-  .menu-toggle {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    cursor: pointer;
-    margin-right: 15px; /* Adjust as needed */
-  }
-
-  .bar {
-    height: 3px;
-    width: 25px;
-    background-color: #fff;
-    margin: 6px 0;
-  }
-
-  .dropdown{
-    display: none;
-    position: absolute;
-    top: 100%; 
-    left: 0;
-    width: 100%;
-  }
-
-  /* .navbar-title.acitve, .dropdown{
-    display: block;
-  } */
-
-  .navbar-links {
-    display: none;
-    width: 100%;
-    text-align: center;
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-color: #333;
-    z-index: 999;
-  }
-
-  .navbar-links.active {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    background-color: #003366;
-  }
-
-  .navbar-title {
-    margin: 10px 0; /* Adjust as needed */
-  }
-  .navbar-title.active > a {
-    pointer-events: none;
-  }
-  
-  .navbar-title.active > a + .dropdown {
-    display: block;
-  }
 }

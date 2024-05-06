@@ -1,34 +1,13 @@
 .homepage {
   position: relative;
   background-color: #003366;
+  height: 310vh;
 }
 
-.bg-wrapper {
-  position: relative;
+.slideshow-pic{
+  width: 800px;
 }
 
-.bg-video {
-  width: 100%;
-  height: auto;
-}
-
-.heading-section {
-  position: absolute;
-  top: 5%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: white;
-}
-
-.heading-title {
-  font-size: 2.5em;
-  margin-bottom: 10px;
-}
-
-.establish-title {
-  font-size: 1.5em;
-}
 
 .game-section {
   background-color: #003366;
@@ -71,7 +50,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   transition: 0.3s;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .grid-item:hover .button {
@@ -96,6 +75,9 @@
 .community-title {
   color: white;
   font-family: "Poppins";
+  text-decoration-line: solid;
+  text-decoration-thickness: 12px;
+  text-decoration-color: #CC0000;
 }
 
 .contact-title {
