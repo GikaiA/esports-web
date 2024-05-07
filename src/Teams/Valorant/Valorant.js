@@ -1,13 +1,13 @@
 import React from "react";
 import "./Valorant.css";
-import vallogo from "../Valorant/ValorantLogo.png";
+// import vallogo from "../Valorant/ValorantLogo.png";
 
 function Valorant() {
   return (
     <div className="val-wrapper">
       <div className="parallax-bg"></div>
       <div className="val-section">
-        <img src={vallogo} alt="val-logo" className="val-logo"></img>
+        {/* <img src={vallogo} alt="val-logo" className="val-logo"></img> */}
       </div>
       <div className="val-paragraph">
         <div className="val-text">

@@ -1,13 +1,13 @@
 import React from "react";
 import "./Smash.css";
-import smashlogo from "../Smash/Smash Logo.png";
+// import smashlogo from "../Smash/Smash Logo.png";
 
 function Smash() {
   return (
     <div className="smash-wrapper">
       <div className="smash-parallax-bg"></div>
       <div className="smash-section">
-        <img src={smashlogo} alt="smash-logo" className="smash-logo"></img>
+        {/* <img src={smashlogo} alt="smash-logo" className="smash-logo"></img> */}
       </div>
       <div className="smash-paragraph">
         <p className="smash-text">

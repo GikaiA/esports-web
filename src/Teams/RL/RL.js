@@ -1,17 +1,17 @@
 import React from "react";
 import "./RL.css";
-import rocketlogo from "../RL/RL-Logo.png";
+// import rocketlogo from "../RL/RL-Logo.png";
 
 function RL() {
   return (
     <div className="rocket-league-wrapper">
       <div className="rocket-parallax-bg"></div>
       <div className="rocket-league-section">
-        <img
+        {/* <img
           src={rocketlogo}
           alt="rocket-league-logo"
           className="rocket-league-logo"
-        ></img>
+        ></img> */}
       </div>
       <div className="rocket-league-paragraph">
         <div className="rocket-text">

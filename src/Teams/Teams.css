@@ -1,0 +1,55 @@
+.teams {
+    height: 100%; /* Adjust height as needed */
+  }
+  
+  .pane{
+    height: 100%;
+    position: relative;
+  }
+
+.hero-pane{
+    width: 100%;
+    opacity: 0.7;
+    transition-duration: 0.5s;
+}
+
+.hero-pane:hover{
+  opacity: 1;
+}
+
+.logo-section{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.logo-hero{
+  width: 300px;
+  height: auto;
+}
+  
+  /* Adjust styles for larger screens */
+  @media screen and (min-width: 768px) {
+    .teams {
+      display: flex;
+      flex-direction: row;
+    }
+    .pane1, .pane2 {
+      flex: 1;
+      height: auto;
+    }
+  }
+  
+  /* Adjust styles for smaller screens like mobile */
+  @media screen and (max-width: 767px) {
+    .teams {
+      display: flex;
+      flex-direction: column;
+    }
+    .pane1, .pane2 {
+      flex: 1;
+      height: auto;
+    }
+  }
+  

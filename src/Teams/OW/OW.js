@@ -1,13 +1,13 @@
 import React from "react";
 import "./OW.css";
-import ow2 from "../OW/OW Logo.png";
+// import ow2 from "../OW/OW Logo.png";
 
 function OW() {
   return (
     <div className="ow-wrapper">
       <div className="ow-parallax-bg"></div>
       <div className="ow-section">
-        <img src={ow2} alt="ow-logo" className="ow-logo-white"></img>
+        {/* <img src={ow2} alt="ow-logo" className="ow-logo-white"></img> */}
       </div>
       <div className="ow-paragraph">
         <p className="ow-text">

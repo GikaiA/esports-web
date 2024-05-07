@@ -1,13 +1,13 @@
 import React from "react";
 import "./CSGO.css";
-import cs2 from "./cs2-logo.png";
+// import cs2 from "./cs2-logo.png";
 
 function CSGO() {
   return (
     <div className="csgo-wrapper">
       <div className="csgo-parallax-bg"></div>
       <div className="csgo-section">
-        <img src={cs2} alt="csgo-logo" className="csgo-logo"></img>
+        {/* <img src={cs2} alt="csgo-logo" className="csgo-logo"></img> */}
       </div>
       <div className="csgo-paragraph">
         <p className="csgo-text">
