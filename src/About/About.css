@@ -1,9 +1,7 @@
-body {
-  background-color: #003366;
-}
-
 .about-us-section {
   display: block;
+  height: 140vh;
+  background-color: #003366;
   align-items: center;
   /* padding-top: 200px; */
   margin-bottom: 90px;
@@ -19,9 +17,51 @@ body {
   height: 450px;
 }
 
+
+.admin-title{
+  font-family: 'Oswald';
+  color: white;
+  font-weight: bold;
+}
+.card-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  row-gap: 10px;
+  column-gap: 20px;
+}
+
+.card {
+  background-color: #003366;
+  padding: 30px;
+  width: 320px;
+}
+
+.admin-info{
+  color: white;
+  font-family: 'Poppins';
+}
+
+.admin-pfp{
+  width: 300px;
+}
+
+.admin-name{
+  font-size: 25px;
+}
+
+.admin-status{
+  font-size: 22px;
+}
+
 @font-face {
   font-family: "Poppins";
   src: local("Poppins"), url(/src/fonts/Poppins-Regular.woff) format("woff");
+}
+@font-face {
+  font-family: "Oswald";
+  src: local("Oswald"),
+    url(../fonts/Oswald-VariableFont_wght.woff) format("woff");
 }
 
 @media only screen and (max-width: 768px) {
