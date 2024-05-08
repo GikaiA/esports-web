@@ -1,0 +1,108 @@
+.league {
+  height: 120vh;
+}
+
+.backbutton-section {
+  display: flex;
+  padding-left: 15px;
+}
+
+.backbutton {
+  border-radius: 5px;
+  background-color: #cc0000;
+  font-size: 18px;
+  color: white;
+  text-decoration-line: none;
+  opacity: 0.6;
+  transition-duration: 0.5s;
+  font-family: "Poppins";
+}
+
+.backbutton:hover {
+  background-color: #cc0000;
+  opacity: 1;
+}
+
+.league-team {
+  display: block;
+  padding-top: 20px;
+}
+
+.gamelogo-section {
+  padding-left: 20px;
+}
+
+.league-logo {
+  display: flex;
+  width: 200px;
+  height: 100%;
+}
+
+.roster-title {
+  display: flex;
+  justify-content: center;
+  font-family: "Poppins";
+  color: white;
+  text-decoration: underline;
+  text-decoration-color: #cc0000;
+  text-decoration-thickness: 5px;
+}
+
+.roster {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  row-gap: 10px;
+  column-gap: 20px;
+  padding-left: 10px;
+}
+
+.member {
+  max-height: 100%;
+  height: 100%;
+  width: 100%;
+}
+
+.member-name {
+  display: flex;
+  font-size: 25px;
+  padding-left: 10px;
+}
+
+.member-role {
+  padding-bottom: 20px;
+}
+
+.roster-card {
+  height: 300px;
+}
+
+.roster-info {
+  height: 7vh;
+  color: white;
+  font-size: 20px;
+  background-color: #0b1b35;
+}
+
+.twitch-social-section {
+  display: block;
+  padding-top: 150px;
+}
+
+.twitch-social-title {
+  color: white;
+  font-family: "Poppins";
+  text-decoration: underline;
+  text-decoration-color: #cc0000;
+  text-decoration-thickness: 5px;
+}
+.twitch-section {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.twitch-video {
+  width: 600px;
+  height: 500px;
+}

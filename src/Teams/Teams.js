@@ -1,6 +1,5 @@
 import React from "react";
 import "./Teams.css";
-import SplitPane from "react-split-pane";
 import { Link } from "react-router-dom";
 import leaguevertical from "../images/leaguevertical.jpg";
 import leaguelogo from "../logos/lol-logo.png";
@@ -24,8 +23,8 @@ import smashlogo from '../logos/smash-logo.png';
 function Teams() {
   return (
     <div className="teams">
-      <SplitPane split="vertical" defaultSize="100%">
-        <div className="pane">
+      <div className="split-pane">
+      <div className="pane">
           <Link to="/teams/league-of-legends">
             <img
               src={leaguevertical}
@@ -137,7 +136,7 @@ function Teams() {
             <img src={smashlogo} alt="logo-hero" className="logo-hero"></img>
           </div>
         </div>
-      </SplitPane>
+      </div>
     </div>
   );
 }
