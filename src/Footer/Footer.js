@@ -11,7 +11,7 @@ function Footer() {
     <div className="footer-section">
       <div className="social-section">
         <div className="social-title">
-          <p>© 2024 Owls Esports Gaming Club</p>
+          <p>© 2024 Owls Esports</p>
         </div>
         <div className="icons-section">
           <a href="https://discord.com/invite/owlsgamingclub" className="link">

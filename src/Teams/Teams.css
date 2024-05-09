@@ -57,6 +57,8 @@
   }
 
   .hero-pane{
+    padding: 0;
+    height: 758px;
     opacity: 1;
   }
 }

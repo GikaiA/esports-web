@@ -59,7 +59,7 @@ function LOL() {
           <h1 className="twitch-social-title"> Check Them Out Below 👇</h1>
           <div className="twitch-section">
             <TwitchPlayer
-              channel="legendof_ti"
+              channel="owlsesportsfllol"
               autoplay
               muted
               className="twitch-video"
@@ -67,7 +67,7 @@ function LOL() {
               height={600}
             ></TwitchPlayer>
             <TwitchChat
-              channel="legendof_ti"
+              channel="owlsesportsfllol"
               darkMode={true}
               height={600}
               className="twitch-chat"

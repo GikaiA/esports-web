@@ -11,7 +11,7 @@ import LOL from "./LOL/LOL";
 import Smash from "./Smash/Smash";
 import Valorant from "./Valorant/Valorant";
 import Footer from "./Footer/Footer";
-import Socials from "./Socials/Socials";
+import JoinUs from "./JoinUs/JoinUs";
 import Teams from "./Teams/Teams";
 
 function App() {
@@ -30,7 +30,7 @@ function App() {
           <Route path="/teams/league-of-legends" element={<LOL />} />
           <Route path="/teams/smash" element={<Smash />} />
           <Route path="/teams/valorant" element={<Valorant />} />
-          <Route path="/socials" element={<Socials />} />
+          <Route path="/joinus" element={<JoinUs />} />
         </Routes>
         <Footer />
       </BrowserRouter>

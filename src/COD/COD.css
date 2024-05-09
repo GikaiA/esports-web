@@ -1,25 +1,65 @@
-.hero{
-  background-size: cover;
-  background-repeat: no-repeat;
-  z-index: -1;
+.cod{
+  height: 120vh;
 }
 
-.cod-image{
-  width: 100%;
-  height: auto;
+.cod-team{
+  display: block;
+  padding-top: 10px;
 }
 
-.logo{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+
+.cod-gamelogo-section{
+  display: flex;
+  padding: 20px 10px;
+  
 }
 
 .cod-logo{
-  width: 600px;
+  width: 380px;
+  height: auto;
 }
 
-.roster-section{
-  background-color: #003366;
+.cod-roster{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  column-gap: 10px;
+  padding-left: 10px;
+}
+
+.cod-roster-info{
+  height: 7vh;
+  color: white;
+  font-size: 20px;
+  background-color: #0b1b35;
+}
+
+.cod-roster-card{
+  display: block;
+}
+
+.cod-member{
+  height: auto;
+  width: 300px;
+  max-width: 100%;
+}
+
+.codtwitch-section {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.twitch-video {
+  width: 600px;
+  height: 500px;
+}
+
+.cod-sentence{
+  color: white;
+  font-family: 'Poppins';
+  text-decoration: underline;
+  text-decoration-color: #cc0000;
+  text-decoration-thickness: 5px;
+  
 }

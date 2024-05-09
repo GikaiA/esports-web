@@ -106,3 +106,50 @@
   width: 600px;
   height: 500px;
 }
+
+
+@media only screen and (max-width:768px) {
+
+  .league{
+    height: 250vh;
+  }
+
+  .gamelogo-section{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+  .roster{
+    display: block;
+    padding: 0;
+  }
+
+
+
+  .roster-card{
+    height: auto;
+  }
+
+  .roster-info{
+    height: 10vh;
+  }
+
+  .twitch-social-section{
+    padding: 0;
+  }
+
+  .twitch-section{
+    display: block;
+  }
+
+  .twitch-video{
+    max-width: 100%; 
+  }
+
+  .twitch-chat {
+    display: none;
+    /* width: 600px;
+    max-width: 100%; 
+    height: 600px; */
+  }
+}

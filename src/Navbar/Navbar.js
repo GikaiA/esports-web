@@ -41,11 +41,13 @@ const Navbar = () => {
             Teams
           </a>
         </div>
-        <div className="navbar-title">
+        {/* <div className="navbar-title">
           <a href="/socials" className="navbar-title-link">
-            Socials
+            <button className="join-button">
+              Join Us
+            </button>
           </a>
-        </div>
+        </div> */}
       </div>
     </nav>
   );

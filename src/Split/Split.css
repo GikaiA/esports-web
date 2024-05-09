@@ -40,11 +40,13 @@
   }
 
   .casual-paragraph{
-    font-size: 15px;
+    width: 100%;
+    font-size: 21px;
   }
 
   .comp-paragraph{
-    font-size: 15px;
+    width: 100%;
+    font-size: 21px;
   }
 
   @media (max-width: 768px) {
