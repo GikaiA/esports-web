@@ -1,90 +1,155 @@
-/* csgo.css */
-.csgo-wrapper {
+.csgo {
+  height: 120vh;
+}
+
+.backbutton-section {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 100vh;
-  max-width: 100%;
-  overflow: hidden;
-  position: relative;
-  overflow: scroll;
--webkit-overflow-scrolling: touch;
+  padding-left: 15px;
 }
 
-.csgo-parallax-bg {
-  background-image: url("/src/bgbutton/cs2-wallpaper.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+.backbutton {
+  border-radius: 5px;
+  background-color: #cc0000;
+  font-size: 18px;
+  color: white;
+  text-decoration-line: none;
+  opacity: 0.6;
+  transition-duration: 0.5s;
+  font-family: "Poppins";
+}
+
+.backbutton:hover {
+  background-color: #cc0000;
+  opacity: 1;
+}
+
+.cs-team {
+  display: block;
+  padding-top: 20px;
+}
+
+.gamelogo-section {
+  padding-left: 20px;
+}
+
+.cs2-logo {
+  display: flex;
+  width: 350px;
   height: 100%;
-  z-index: -1;
 }
 
-.csgo-section {
-  width: 100%;
+.roster-title {
   display: flex;
   justify-content: center;
-  position: relative;
-  z-index: 2;
-}
-
-.csgo-logo {
-  width: 520px;
-  margin-top: 120px;
-}
-
-.csgo-paragraph {
+  font-family: "Poppins";
   color: white;
-  background-color: #772409;
-  padding: 20px;
+  text-decoration: underline;
+  text-decoration-color: #cc0000;
+  text-decoration-thickness: 5px;
+}
+
+.roster {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  row-gap: 10px;
+  column-gap: 20px;
+  padding-left: 10px;
+}
+
+.member {
+  max-height: 100%;
+  height: 100%;
   width: 100%;
-  box-sizing: border-box;
-  margin-top: auto;
-  position: relative;
-  z-index: 2;
 }
 
-.csgo-text {
-  font-size: 30px;
-}
-
-.csgo-roster {
-  flex: 1;
-  display: block;
-  align-items: center;
-  padding-left: 20px;
-  color: white;
-}
-
-.csgo-roster-title {
-  font-size: 30px;
-}
-
-.csgo-roster-paragraph {
+.member-name {
+  display: flex;
   font-size: 25px;
+  padding-left: 10px;
 }
 
-@media screen and (min-width: 768px) {
-  .csgo-paragraph {
-    width: 100%; 
+.member-role {
+  padding-bottom: 20px;
+}
+
+.roster-card {
+  height: 300px;
+}
+
+.roster-info {
+  height: 7vh;
+  color: white;
+  font-size: 20px;
+  background-color: #0b1b35;
+}
+
+.twitch-social-section {
+  display: block;
+  padding-top: 150px;
+}
+
+.twitch-social-title {
+  color: white;
+  font-family: "Poppins";
+  text-decoration: underline;
+  text-decoration-color: #cc0000;
+  text-decoration-thickness: 5px;
+}
+.twitch-section {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.twitch-video {
+  width: 600px;
+  height: 500px;
+}
+
+
+@media only screen and (max-width:768px) {
+
+  .league{
+    height: 250vh;
   }
 
-  .csgo-logo {
-    width: 600px;
-    margin-top: 60px;
-    margin-bottom: 20p
+  .gamelogo-section{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+  .roster{
+    display: block;
+    padding: 0;
   }
 
-  .csgo-roster-title {
-    font-size: 36px; /* Adjusted font size for larger screens */
+
+
+  .roster-card{
+    height: auto;
   }
 
-  .csgo-roster-paragraph {
-    font-size: 28px; /* Adjusted font size for larger screens */
+  .roster-info{
+    height: 10vh;
+  }
+
+  .twitch-social-section{
+    padding: 0;
+  }
+
+  .twitch-section{
+    display: block;
+  }
+
+  .twitch-video{
+    max-width: 100%; 
+  }
+
+  .twitch-chat {
+    display: none;
+    /* width: 600px;
+    max-width: 100%; 
+    height: 600px; */
   }
 }

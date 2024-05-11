@@ -64,7 +64,7 @@ function Teams() {
             ></img>
           </div>
         </div>
-        <div className="pane">
+        {/* <div className="pane">
           <Link to="/teams/valorant">
             <img
               src={valorantvertical}
@@ -75,8 +75,8 @@ function Teams() {
           <div className="logo-section">
             <img src={valorantlogo} alt="logo-hero" className="logo-hero"></img>
           </div>
-        </div>
-        <div className="pane">
+        </div> */}
+        {/* <div className="pane">
           <Link to="/teams/valorant">
             <img
               src={apexlegendsvertical}
@@ -87,7 +87,7 @@ function Teams() {
           <div className="logo-section">
             <img src={apexlogo} alt="logo-hero" className="logo-hero"></img>
           </div>
-        </div>
+        </div> */}
         <div className="pane">
           <Link to="/teams/rocket-league">
             <img
@@ -112,7 +112,7 @@ function Teams() {
             <img src={cs2logo} alt="logo-hero" className="logo-hero"></img>
           </div>
         </div>
-        <div className="pane">
+        {/* <div className="pane">
           <Link to="/teams/valorant">
             <img
               src={r6vertical}
@@ -123,9 +123,9 @@ function Teams() {
           <div className="logo-section">
             <img src={r6logo} alt="logo-hero" className="logo-hero"></img>
           </div>
-        </div>
+        </div> */}
         <div className="pane">
-          <Link to="/teams/valorant">
+          <Link to="/teams/smash">
             <img
               src={smashvertical}
               alt="league-hero"

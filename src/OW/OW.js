@@ -1,33 +1,77 @@
 import React from "react";
 import "./OW.css";
-// import ow2 from "../OW/OW Logo.png";
+import ow from "../logos/ow-logo.png";
+import ian from '../images/ian.jpg';
+import { TwitchPlayer, TwitchChat } from "react-twitch-embed";
 
 function OW() {
   return (
-    <div className="ow-wrapper">
-      <div className="ow-parallax-bg"></div>
-      <div className="ow-section">
-        {/* <img src={ow2} alt="ow-logo" className="ow-logo-white"></img> */}
-      </div>
-      <div className="ow-paragraph">
-        <p className="ow-text">
-          {" "}
-          Overwatch has been a steadfast presence within our esports club since
-          2019, enduring its share of transitions and transformations. After
-          spending time with the Union, it found its way back to us in 2021.
-          Throughout its journey, Overwatch has weathered numerous roster
-          changes, consistent rotations of in-game leaders, and role switches
-          that kept the team on their toes. This tumultuous ride led to
-          fluctuating records in every season. However, with a fresh team, a new
-          mindset, and a determined in-game leader at the helm, they are now
-          steadfast in their pursuit of securing the elusive 1st place trophy.
-          This newfound determination reflects their unwavering commitment to
-          excellence in Overwatch, and the future holds great promise for this
-          dedicated squad.
-        </p>{" "}
-        <div className="ow-roster">
-          <h1>Main Roster</h1>
-          <p className="ow-roster-text">TBA</p>{" "}
+    <div className="ow">
+      {/* <div className="backbutton-section">
+        <Link to="/teams">
+          <button className="backbutton">Back to Teams</button>
+        </Link>
+      </div> */}
+      <div className="league-team">
+        <div className="gamelogo-section">
+          <img src={ow} alt="league-logo" className="ow-logo"></img>
+        </div>
+        <h1 className="roster-title">Roster</h1>
+        <div className="roster">
+          <div className="roster-card">
+            <div className="roster-info">
+              <h1 className="member-name">Member Name</h1>
+              <p className="member-role">Member Role</p>
+            </div>
+            <img src={ian} alt="member" className="member"></img>
+          </div>
+          <div className="roster-card">
+            <div className="roster-info">
+              <h1 className="member-name">Member Name</h1>
+              <p className="member-role">Member Role</p>
+            </div>
+            <img src={ian} alt="member" className="member"></img>
+          </div>
+          <div className="roster-card">
+            <div className="roster-info">
+              <h1 className="member-name">Member Name</h1>
+              <p className="member-role">Member Role</p>
+            </div>
+            <img src={ian} alt="member" className="member"></img>
+          </div>
+          <div className="roster-card">
+            <div className="roster-info">
+              <h1 className="member-name">Member Name</h1>
+              <p className="member-role">Member Role</p>
+            </div>
+            <img src={ian} alt="member" className="member"></img>
+          </div>
+          <div className="roster-card">
+            <div className="roster-info">
+              <h1 className="member-name">Member Name</h1>
+              <p className="member-role">Member Role</p>
+            </div>
+            <img src={ian} alt="member" className="member"></img>
+          </div>
+        </div>
+        <div className="twitch-social-section">
+          <h1 className="twitch-social-title"> Check Them Out Below 👇</h1>
+          <div className="twitch-section">
+            <TwitchPlayer
+              channel="owlsesportsfloverwatch"
+              autoplay
+              muted
+              className="twitch-video"
+              width={1000}
+              height={600}
+            ></TwitchPlayer>
+            <TwitchChat
+              channel="owlsesportsfloverwatch"
+              darkMode={true}
+              height={600}
+              className="twitch-chat"
+            ></TwitchChat>
+          </div>
         </div>
       </div>
     </div>

@@ -1,25 +1,23 @@
-.cod{
+.cod {
   height: 120vh;
 }
 
-.cod-team{
+.cod-team {
   display: block;
   padding-top: 10px;
 }
 
-
-.cod-gamelogo-section{
+.cod-gamelogo-section {
   display: flex;
   padding: 20px 10px;
-  
 }
 
-.cod-logo{
+.cod-logo {
   width: 380px;
   height: auto;
 }
 
-.cod-roster{
+.cod-roster {
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -27,18 +25,18 @@
   padding-left: 10px;
 }
 
-.cod-roster-info{
+.cod-roster-info {
   height: 7vh;
   color: white;
   font-size: 20px;
   background-color: #0b1b35;
 }
 
-.cod-roster-card{
+.cod-roster-card {
   display: block;
 }
 
-.cod-member{
+.cod-member {
   height: auto;
   width: 300px;
   max-width: 100%;
@@ -55,11 +53,58 @@
   height: 500px;
 }
 
-.cod-sentence{
+.cod-sentence {
   color: white;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   text-decoration: underline;
   text-decoration-color: #cc0000;
   text-decoration-thickness: 5px;
-  
+}
+
+@media only screen and (max-width:768px) {
+
+  .cod{
+    height: 250vh;
+  }
+
+  .cod-gamelogo-section{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+  .cod-roster{
+    display: block;
+    padding: 0;
+  }
+
+  .cod-roster-card{
+    height: auto;
+  }
+
+  .cod-member{
+    width: auto;
+  }
+
+  .cod-roster-info{
+    height: 10vh;
+  }
+
+  .cod-twitch-section{
+    padding: 0;
+  }
+
+  .twitch-section{
+    display: block;
+  }
+
+  .twitch-video{
+    max-width: 100%; 
+  }
+
+  .twitch-chat {
+    display: none;
+    /* width: 600px;
+    max-width: 100%; 
+    height: 600px; */
+  }
 }

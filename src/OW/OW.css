@@ -1,85 +1,155 @@
-/* ow.css */
-.ow-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 100vh;
-  max-width: 100%;
-  overflow: hidden;
-  position: relative;
-  overflow: scroll;
-  -webkit-overflow-scrolling: touch;
-}
-
-.ow-parallax-bg {
-  background-image: url("/src/images/soldier76-hero.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-}
-
-.ow-section {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  position: relative;
-  z-index: 2;
-  padding-bottom: 45px;
-  padding-top: 21px;
-}
-
-.ow-logo-white {
-  display: flex;
-  height: 300px;
-}
-
-.ow-paragraph {
-  display: block;
-  font-family: "Poppins";
-  background-color: #074176;
-  width: 100%;
-  /* margin: 10px; */
-  padding: 20px;
-  position: relative;
-  z-index: 2;
-}
-
-.ow-text {
-  font-size: 30px;
-  color: white;
-}
-
-.ow-roster {
-  flex: 1;
-  display: block;
-  align-items: center;
-  color: white;
-  padding-left: 20px;
-}
-
-.ow-roster-text {
-  font-size: 30px;
-}
-
-@font-face {
-  font-family: "Poppins";
-  src: local("Poppins"), url(/src/fonts/Poppins-Regular.woff) format("woff");
-}
-
-@media only screen and (max-width: 768px) {
-  .ow-logo-white {
-    height: auto; /* Allow the height to adjust based on content */
-    max-width: 100%; /* Ensure the image does not overflow its container */
+.ow {
+    height: 120vh;
   }
-}
-
-.ow-text {
-  padding-top: 0;
-}
+  
+  .backbutton-section {
+    display: flex;
+    padding-left: 15px;
+  }
+  
+  .backbutton {
+    border-radius: 5px;
+    background-color: #cc0000;
+    font-size: 18px;
+    color: white;
+    text-decoration-line: none;
+    opacity: 0.6;
+    transition-duration: 0.5s;
+    font-family: "Poppins";
+  }
+  
+  .backbutton:hover {
+    background-color: #cc0000;
+    opacity: 1;
+  }
+  
+  .league-team {
+    display: block;
+    padding-top: 20px;
+  }
+  
+  .gamelogo-section {
+    padding-left: 20px;
+  }
+  
+  .ow-logo {
+    display: flex;
+    width: 400px;
+    height: 100%;
+  }
+  
+  .roster-title {
+    display: flex;
+    justify-content: center;
+    font-family: "Poppins";
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: #cc0000;
+    text-decoration-thickness: 5px;
+  }
+  
+  .roster {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    row-gap: 10px;
+    column-gap: 20px;
+    padding-left: 10px;
+  }
+  
+  .member {
+    max-height: 100%;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .member-name {
+    display: flex;
+    font-size: 25px;
+    padding-left: 10px;
+  }
+  
+  .member-role {
+    padding-bottom: 20px;
+  }
+  
+  .roster-card {
+    height: 300px;
+  }
+  
+  .roster-info {
+    height: 7vh;
+    color: white;
+    font-size: 20px;
+    background-color: #0b1b35;
+  }
+  
+  .twitch-social-section {
+    display: block;
+    padding-top: 150px;
+  }
+  
+  .twitch-social-title {
+    color: white;
+    font-family: "Poppins";
+    text-decoration: underline;
+    text-decoration-color: #cc0000;
+    text-decoration-thickness: 5px;
+  }
+  .twitch-section {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+  
+  .twitch-video {
+    width: 600px;
+    height: 500px;
+  }
+  
+  
+  @media only screen and (max-width:768px) {
+  
+    .league{
+      height: 250vh;
+    }
+  
+    .gamelogo-section{
+      display: flex;
+      justify-content: center;
+      padding: 0;
+    }
+    .roster{
+      display: block;
+      padding: 0;
+    }
+  
+  
+  
+    .roster-card{
+      height: auto;
+    }
+  
+    .roster-info{
+      height: 10vh;
+    }
+  
+    .twitch-social-section{
+      padding: 0;
+    }
+  
+    .twitch-section{
+      display: block;
+    }
+  
+    .twitch-video{
+      max-width: 100%; 
+    }
+  
+    .twitch-chat {
+      display: none;
+      /* width: 600px;
+      max-width: 100%; 
+      height: 600px; */
+    }
+  }

@@ -18,7 +18,7 @@
   position: relative; 
   flex: 1; 
   gap: 0;
-  border: 1px solid transparent; 
+  /* border: 1px solid transparent;  */
   object-fit: cover;
 }
 
@@ -54,11 +54,12 @@
 
   .pane{
     width: 100%;
+    border: none;
   }
 
   .hero-pane{
     padding: 0;
-    height: 758px;
+    height: 765px;
     opacity: 1;
   }
 }

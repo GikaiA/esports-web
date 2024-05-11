@@ -1,33 +1,80 @@
 import React from "react";
 import "./CSGO.css";
-// import cs2 from "./cs2-logo.png";
+import cs2logo from "../logos/cs2-logo.png";
+import csplayer from '../images/csgoplayer.jpg';
+import { TwitchPlayer, TwitchChat } from "react-twitch-embed";
 
 function CSGO() {
   return (
-    <div className="csgo-wrapper">
-      <div className="csgo-parallax-bg"></div>
-      <div className="csgo-section">
-        {/* <img src={cs2} alt="csgo-logo" className="csgo-logo"></img> */}
+    <div className="csgo">
+    {/* <div className="backbutton-section">
+      <Link to="/teams">
+        <button className="backbutton">Back to Teams</button>
+      </Link>
+    </div> */}
+    <div className="cs-team">
+      <div className="gamelogo-section">
+        <img src={cs2logo} alt="cs2-logo" className="cs2-logo"></img>
       </div>
-      <div className="csgo-paragraph">
-        <p className="csgo-text">
-          In the spring of 2023, Counter-Strike: Global Offensive, commonly
-          known as CSGO, made its debut at our school. The journey began with a
-          rocky start, as the newly formed team struggled to secure victories.
-          Despite the initial setbacks, their unwavering determination to
-          compete and improve never wavered. Fast-forward to the fall of 2023,
-          and a new era had dawned for the FAU CSGO squad. With Smol and
-          Dannycrz leading the front line, this fresh and revitalized team aimed
-          to carve a path to success for the Fall 2023 season and beyond. Their
-          resilience and dedication would undoubtedly shape their future
-          endeavors in the world of competitive gaming.
-        </p>
-        <div className="cod-roster">
-          <h1 className="csgo-roster-title">Main Roster</h1>
-          <p className="csgo-roster-paragraph">Roster TBA</p>
+      <h1 className="roster-title">Roster</h1>
+      <div className="roster">
+        <div className="roster-card">
+          <div className="roster-info">
+            <h1 className="member-name">Member Name</h1>
+            <p className="member-role">Member Role</p>
+          </div>
+          <img src={csplayer} alt="member" className="member"></img>
+        </div>
+        <div className="roster-card">
+          <div className="roster-info">
+            <h1 className="member-name">Member Name</h1>
+            <p className="member-role">Member Role</p>
+          </div>
+          <img src={csplayer} alt="member" className="member"></img>
+        </div>
+        <div className="roster-card">
+          <div className="roster-info">
+            <h1 className="member-name">Member Name</h1>
+            <p className="member-role">Member Role</p>
+          </div>
+          <img src={csplayer} alt="member" className="member"></img>
+        </div>
+        <div className="roster-card">
+          <div className="roster-info">
+            <h1 className="member-name">Member Name</h1>
+            <p className="member-role">Member Role</p>
+          </div>
+          <img src={csplayer} alt="member" className="member"></img>
+        </div>
+        <div className="roster-card">
+          <div className="roster-info">
+            <h1 className="member-name">Member Name</h1>
+            <p className="member-role">Member Role</p>
+          </div>
+          <img src={csplayer} alt="member" className="member"></img>
+        </div>
+      </div>
+      <div className="twitch-social-section">
+        <h1 className="twitch-social-title"> Check Them Out Below 👇</h1>
+        <div className="twitch-section">
+          <TwitchPlayer
+            channel="owlsesportsfllol"
+            autoplay
+            muted
+            className="twitch-video"
+            width={1000}
+            height={600}
+          ></TwitchPlayer>
+          <TwitchChat
+            channel="owlsesportsfllol"
+            darkMode={true}
+            height={600}
+            className="twitch-chat"
+          ></TwitchChat>
         </div>
       </div>
     </div>
+  </div>
   );
 }
 

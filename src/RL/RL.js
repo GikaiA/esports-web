@@ -1,40 +1,67 @@
 import React from "react";
 import "./RL.css";
-// import rocketlogo from "../RL/RL-Logo.png";
+import rocketlogo from "../logos/rl-logo.png";
+import rlplayer from "../images/rlplayer.jpg";
+import { TwitchPlayer, TwitchChat } from "react-twitch-embed";
 
 function RL() {
   return (
-    <div className="rocket-league-wrapper">
-      <div className="rocket-parallax-bg"></div>
-      <div className="rocket-league-section">
-        {/* <img
-          src={rocketlogo}
-          alt="rocket-league-logo"
-          className="rocket-league-logo"
-        ></img> */}
-      </div>
-      <div className="rocket-league-paragraph">
-        <div className="rocket-text">
-          <p>
-            It all began in Fall 2020 amidst the Covid-19 pandemic, when FAU
-            Rocket League was restarted and began their journey. Throughout
-            their history, FAU RL has undergone some changes, from being Club
-            owned to testing a potential Esports program sponsored by FAU, and
-            now back to being Club owned, but as a Sports Club with funding.
-            Between 2020 and 2023, FAU RL earned numerous accolades, such as
-            placing 5th in the CECC tournament in Kissimmee, FL, and 4th in an
-            ECAC tournament in Albany, NY. They also achieved 4th overall in
-            NACE Open Premier plus, placed 2nd at a NACAR Rocket League Event at
-            the Miami International Speedway, 2nd overall in the USF Battle for
-            Florida, and even 1st overall in the Fall 2022 META League.
-            Throughout this time, FAU RL grew better, faster, and stronger with
-            every step. They are now ranked in the TOP 50 schools in the country
-            and only going up. FAU RL is the REAL DEAL.
-          </p>
+    <div className="rocketleague">
+      {/* <div className="backbutton-section">
+        <Link to="/teams">
+          <button className="backbutton">Back to Teams</button>
+        </Link>
+      </div> */}
+      <div className="rocket-team">
+        <div className="gamelogo-section">
+          <img
+            src={rocketlogo}
+            alt="rocketleague-logo"
+            className="rocketleague-logo"
+          ></img>
         </div>
-        <div className="rocket-roster">
-          <h1 className="rocket-roster-title">Main Roster</h1>
-          <p className="rocket-roster">TBD</p>
+        <h1 className="roster-title">Roster</h1>
+        <div className="roster">
+          <div className="roster-card">
+            <div className="roster-info">
+              <h1 className="member-name">Member Name</h1>
+              <p className="member-role">Member Role</p>
+            </div>
+            <img src={rlplayer} alt="member" className="member"></img>
+          </div>
+          <div className="roster-card">
+            <div className="roster-info">
+              <h1 className="member-name">Member Name</h1>
+              <p className="member-role">Member Role</p>
+            </div>
+            <img src={rlplayer} alt="member" className="member"></img>
+          </div>
+          <div className="roster-card">
+            <div className="roster-info">
+              <h1 className="member-name">Member Name</h1>
+              <p className="member-role">Member Role</p>
+            </div>
+            <img src={rlplayer} alt="member" className="member"></img>
+          </div>
+        </div>
+        <div className="twitch-social-section">
+          <h1 className="twitch-social-title"> Check Them Out Below 👇</h1>
+          <div className="twitch-section">
+            <TwitchPlayer
+              channel="owlsesportsflrl"
+              autoplay
+              muted
+              className="twitch-video"
+              width={1000}
+              height={600}
+            ></TwitchPlayer>
+            <TwitchChat
+              channel="owlsesportsflrl"
+              darkMode={true}
+              height={600}
+              className="twitch-chat"
+            ></TwitchChat>
+          </div>
         </div>
       </div>
     </div>
