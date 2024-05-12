@@ -16,7 +16,6 @@
     "react-social-media-embed": "^2.4.1",
     "react-split-pane": "^2.0.3",
     "react-twitch-embed": "^3.0.2",
-    "react-twitter-widgets": "^1.11.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

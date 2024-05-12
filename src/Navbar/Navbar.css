@@ -12,8 +12,8 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  gap: 53px;
-  font-size: 20.5px;
+  gap: 45px;
+  font-size: 19px;
 }
 
 .home-section {
@@ -47,7 +47,7 @@
 
 .join-button{
   background-color: #CC0000;
-  font-size: 20.5;
+  font-size: 18px;
   font-family: 'Oswald';
   color: white;
   padding: 10px 20px;
