@@ -109,6 +109,7 @@
 .twitch-section {
   display: flex;
   justify-content: center;
+  padding-bottom: 60px;
   margin: 0;
 }
 
@@ -150,6 +151,7 @@
 
   .twitch-section{
     display: block;
+    padding-bottom: 75px;
   }
 
   .twitch-video{

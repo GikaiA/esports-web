@@ -62,3 +62,16 @@ li{
   display: flex;
   justify-content: center;
 }
+
+
+@media only screen and (max-width:768px) {
+
+  .requirement-list{
+    font-size: 19px;
+    padding: 0;
+  }
+
+  .joinus-button{
+    font-size: 19px;
+  }
+}

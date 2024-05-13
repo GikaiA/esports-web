@@ -11,20 +11,20 @@ function JoinUs() {
           <li>Must be a registered Member of the FAU Esports Organization</li>
           <li>
             No harassment of other players; no trolling, swearing, bullying,
-            fighting
+            fighting.
           </li>
           <li>Be sportsmanlike at all times.</li>
           <li> Have no outstanding account balances from a prior term.</li>
           <li>Have at least a 2.5 GPA.</li>
-          <li>Take at least 12 credit hours per semester. (full time)</li>
-          <li>All players are restricted to only one team at a time</li>
+          <li>Take at least 12 credit hours per semester. (full time).</li>
+          <li>All players are restricted to only one team at a time.</li>
           <li>Participate in all Team Meetings.</li>
           <li>
             {" "}
             Participate in all competitive eSports events and fundraising
             opportunities.
           </li>
-          <li> Treat admins and other members with respect.</li>
+          <li>Treat admins and other members with respect.</li>
         </ul>
       </div>
       <div className="join-section">

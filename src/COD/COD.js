@@ -44,7 +44,7 @@ function COD() {
         </div>
         <div className="cod-twitch-section">
           <h1 className="cod-sentence">Check Them Out Below 👇</h1>
-          <div className="twitch-section">
+          <div className="codtwitch-section">
             <TwitchPlayer
               channel="owlsesportsflcod"
               autoplay
