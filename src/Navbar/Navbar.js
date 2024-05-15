@@ -4,11 +4,15 @@ import "./Navbar.css";
 import owlsesportslogo from "../images/owls-esports.png";
 
 const Navbar = () => {
- 
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
 
   return (
     <nav className="navbar">
-      <div className="menu-toggle">
+      <div className="menu-toggle" onClick={toggleMenu}>
         <div className="bar"></div>
         <div className="bar"></div>
         <div className="bar"></div>
@@ -22,7 +26,7 @@ const Navbar = () => {
             ></img>
           </Link>
         </div>
-      <div className='navbar-links'>
+        <div className='navbar-links'>
         <div className="navbar-title">
           <a href="/" className="navbar-title-link">
             Home
@@ -41,14 +45,12 @@ const Navbar = () => {
             Teams
           </a>
         </div>
-        {/* <div className="navbar-title"> */}
           <a href="/joinus" className="navbar-title-link">
             <button className="join-button">
               Join Us
             </button>
           </a>
         </div>
-      {/* </div> */}
     </nav>
   );
 };

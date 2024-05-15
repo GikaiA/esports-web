@@ -7,11 +7,6 @@ import { TwitchPlayer, TwitchChat } from "react-twitch-embed";
 function OW() {
   return (
     <div className="ow">
-      {/* <div className="backbutton-section">
-        <Link to="/teams">
-          <button className="backbutton">Back to Teams</button>
-        </Link>
-      </div> */}
       <div className="league-team">
         <div className="gamelogo-section">
           <img src={ow} alt="league-logo" className="ow-logo"></img>

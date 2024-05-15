@@ -7,11 +7,6 @@ import { TwitchPlayer, TwitchChat } from "react-twitch-embed";
 function RL() {
   return (
     <div className="rocketleague">
-      {/* <div className="backbutton-section">
-        <Link to="/teams">
-          <button className="backbutton">Back to Teams</button>
-        </Link>
-      </div> */}
       <div className="rocket-team">
         <div className="gamelogo-section">
           <img

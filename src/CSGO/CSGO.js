@@ -7,11 +7,6 @@ import { TwitchPlayer, TwitchChat } from "react-twitch-embed";
 function CSGO() {
   return (
     <div className="csgo">
-    {/* <div className="backbutton-section">
-      <Link to="/teams">
-        <button className="backbutton">Back to Teams</button>
-      </Link>
-    </div> */}
     <div className="cs-team">
       <div className="gamelogo-section">
         <img src={cs2logo} alt="cs2-logo" className="cs2-logo"></img>

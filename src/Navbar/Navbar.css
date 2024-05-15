@@ -1,5 +1,5 @@
 .navbar {
-  background-color: #0B1B35;
+  background-color: #0b1b35;
   padding: 10px;
   display: flex;
   justify-content: space-between;
@@ -18,12 +18,12 @@
 
 .home-section {
   display: flex;
-  align-items: center; 
+  align-items: center;
 }
 
 .main-logo {
   width: 70px;
-  margin-right: auto; 
+  margin-right: auto;
 }
 
 .navbar-title-link {
@@ -32,11 +32,10 @@
   transition-duration: 0.3s;
 }
 
-
-.navbar-title-link:hover{
+.navbar-title-link:hover {
   text-decoration: underline;
-  text-decoration-color: #CC0000;
-  text-decoration-thickness:3px ;
+  text-decoration-color: #cc0000;
+  text-decoration-thickness: 3px;
 }
 
 .menu-toggle {
@@ -45,19 +44,46 @@
   cursor: pointer;
 }
 
-.join-button{
-  background-color: #CC0000;
+.join-button {
+  background-color: #cc0000;
   font-size: 18px;
-  font-family: 'Oswald';
+  font-family: "Oswald";
   color: white;
   padding: 10px 20px;
   text-decoration: none;
 }
 
-.join-button:hover{
-  background-color: #CC0000;
+.join-button:hover {
+  background-color: #cc0000;
 }
 
+@media screen and (max-width: 768px) {
+  .menu-toggle {
+    display: block; 
+  }
+
+  .navbar-links.open {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    width: 100%;
+  }
+  
+  .navbar-title {
+    padding: 10px;
+  }
+
+
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 7px 10px;
+  }
+
+}
 
 @font-face {
   font-family: "Oswald";

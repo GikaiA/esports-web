@@ -1,26 +1,5 @@
 .smash {
-  height: 120vh;
-}
-
-.backbutton-section {
-  display: flex;
-  padding-left: 15px;
-}
-
-.backbutton {
-  border-radius: 5px;
-  background-color: #cc0000;
-  font-size: 18px;
-  color: white;
-  text-decoration-line: none;
-  opacity: 0.6;
-  transition-duration: 0.5s;
-  font-family: "Poppins";
-}
-
-.backbutton:hover {
-  background-color: #cc0000;
-  opacity: 1;
+  height: 150vh;
 }
 
 .smash-team {
@@ -38,10 +17,6 @@
   height: 100%;
 }
 
-.sub-team{
-  display: block;
-}
-
 .roster-title {
   display: flex;
   justify-content: center;
@@ -52,7 +27,15 @@
   text-decoration-thickness: 5px;
 }
 
-.team-name{
+.team-name {
+  padding-top: 100px;
+  font-size: 28px;
+  font-family: "Poppins";
+  color: white;
+}
+
+.team-name {
+  padding-top: 20px;
   font-size: 22px;
   font-family: "Poppins";
   color: white;
@@ -65,6 +48,11 @@
   row-gap: 10px;
   column-gap: 20px;
   padding-left: 10px;
+  padding-top: 40px;
+}
+
+.subrosters {
+  display: block;
 }
 
 .member {
@@ -118,44 +106,40 @@
   height: 500px;
 }
 
-
-@media only screen and (max-width:768px) {
-
-  .league{
+@media only screen and (max-width: 768px) {
+  .league {
     height: 250vh;
   }
 
-  .gamelogo-section{
+  .gamelogo-section {
     display: flex;
     justify-content: center;
     padding: 0;
   }
-  .roster{
+  .roster {
     display: block;
     padding: 0;
   }
 
-
-
-  .roster-card{
+  .roster-card {
     height: auto;
   }
 
-  .roster-info{
+  .roster-info {
     height: 10vh;
   }
 
-  .twitch-social-section{
+  .twitch-social-section {
     padding: 0;
   }
 
-  .twitch-section{
+  .twitch-section {
     display: block;
     padding-bottom: 75px;
   }
 
-  .twitch-video{
-    max-width: 100%; 
+  .twitch-video {
+    max-width: 100%;
   }
 
   .twitch-chat {
