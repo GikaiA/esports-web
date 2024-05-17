@@ -13,6 +13,7 @@ import Valorant from "./Valorant/Valorant";
 import Footer from "./Footer/Footer";
 import JoinUs from "./JoinUs/JoinUs";
 import Teams from "./Teams/Teams";
+import Streams from "./Streams/Streams";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
           <Route path="/teams/smash" element={<Smash />} />
           <Route path="/teams/valorant" element={<Valorant />} />
           <Route path="/joinus" element={<JoinUs />} />
+          <Route path="/streams" element={<Streams/>}/>
         </Routes>
         <Footer />
       </BrowserRouter>

@@ -1,0 +1,47 @@
+.streams {
+  display: block;
+}
+
+.stream-title {
+  display: flex;
+  font-size: 32px;
+  padding-left: 20px;
+  color: white;
+  font-family: "Poppins";
+}
+
+.stream-twitch-section {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding-top: 100px;
+}
+
+.twitch-video {
+  width: 700px;
+  height: 600px;
+}
+
+@media only screen and (max-width: 768px) {
+  .streams {
+    height: 147vh;
+  }
+  .stream-title {
+    display: flex;
+    justify-content: center;
+    padding-right: 5px;
+  }
+  .stream-twitch-section {
+    display: block;
+    padding: 0;
+  }
+
+  .twitch-video {
+    max-width: 100%;
+  }
+
+  .twitch-chat {
+    display: block;
+    width: 100%;
+  }
+}

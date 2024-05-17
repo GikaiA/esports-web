@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./LOL.css";
 import leaguelogo from "../logos/lol-logo.png";
 import kerry from "../images/kerry.jpg";

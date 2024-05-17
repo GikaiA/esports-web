@@ -4,10 +4,10 @@ import "./Navbar.css";
 import owlsesportslogo from "../images/owls-esports.png";
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
-    setIsOpen(!isOpen);
+    setMenuOpen(!menuOpen);
   };
 
   return (
@@ -26,12 +26,7 @@ const Navbar = () => {
             ></img>
           </Link>
         </div>
-        <div className='navbar-links'>
-        <div className="navbar-title">
-          <a href="/" className="navbar-title-link">
-            Home
-          </a>
-        </div>
+        <div className={`navbar-links ${menuOpen ? 'open' : ''}`}>
         <div className="navbar-title">
           <a href="/aboutus" className="navbar-title-link">
             About Us
@@ -43,6 +38,14 @@ const Navbar = () => {
             className='navbar-title-link '
           >
             Teams
+          </a>
+        </div>
+        <div className="navbar-title">
+          <a
+            href="/streams"
+            className='navbar-title-link '
+          >
+            Streams
           </a>
         </div>
           <a href="/joinus" className="navbar-title-link">

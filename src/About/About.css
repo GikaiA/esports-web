@@ -1,6 +1,6 @@
 .about-us-section {
   display: block;
-  height: 140vh;
+  height: 110vh;
   background-color: #003366;
   align-items: center;
   /* padding-top: 200px; */
@@ -66,15 +66,20 @@
 
 @media only screen and (max-width: 768px) {
   .about-us-section {
-    padding-top: 50px; /* Adjust the padding for smaller screens */
+    height: 490vh;
+    padding-top: 50px; 
   }
 
   .about-us-text {
-    font-size: 18px; /* Adjust the font size for smaller screens */
+    font-size: 18px; 
+  }
+
+  .admin-name{
+    margin: 0;
   }
 
   .owls-logo {
-    height: 200px; /* Allow the logo to shrink with smaller screens */
-    max-width: 100%; /* Make sure the logo doesn't overflow its container */
+    height: 200px; 
+    max-width: 100%; 
   }
 }
